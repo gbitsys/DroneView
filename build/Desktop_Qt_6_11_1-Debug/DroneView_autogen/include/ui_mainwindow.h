@@ -20,6 +20,7 @@
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QRadioButton>
 #include <QtWidgets/QSlider>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStackedWidget>
@@ -38,7 +39,7 @@ public:
     QAction *actionQuit;
     QAction *actionSet_Url;
     QWidget *centralwidget;
-    QHBoxLayout *horizontalLayout_2;
+    QHBoxLayout *horizontalLayout_4;
     QStackedWidget *stackedWidget;
     QWidget *waitScreen;
     QVBoxLayout *verticalLayout_8;
@@ -57,11 +58,18 @@ public:
     QSpacerItem *horizontalSpacer;
     QPushButton *stopButton;
     QPushButton *recordButton;
+    QPushButton *screenshotButton;
     QPushButton *resolutionButton;
     QVBoxLayout *verticalLayout_2;
     QSlider *zoomSlider_2;
     QLabel *zoomLabel_2;
     QSpacerItem *horizontalSpacer_2;
+    QHBoxLayout *horizontalLayout_3;
+    QSpacerItem *horizontalSpacer_5;
+    QRadioButton *stream1Button;
+    QRadioButton *stream2Button;
+    QRadioButton *Stream3;
+    QSpacerItem *horizontalSpacer_6;
     QWidget *settingsScreen;
     QMenuBar *menubar;
     QMenu *menuFile;
@@ -72,7 +80,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(734, 586);
+        MainWindow->resize(743, 617);
         MainWindow->setLayoutDirection(Qt::LayoutDirection::LeftToRight);
         actionSave = new QAction(MainWindow);
         actionSave->setObjectName("actionSave");
@@ -91,8 +99,8 @@ public:
         sizePolicy.setHeightForWidth(centralwidget->sizePolicy().hasHeightForWidth());
         centralwidget->setSizePolicy(sizePolicy);
         centralwidget->setLayoutDirection(Qt::LayoutDirection::LeftToRight);
-        horizontalLayout_2 = new QHBoxLayout(centralwidget);
-        horizontalLayout_2->setObjectName("horizontalLayout_2");
+        horizontalLayout_4 = new QHBoxLayout(centralwidget);
+        horizontalLayout_4->setObjectName("horizontalLayout_4");
         stackedWidget = new QStackedWidget(centralwidget);
         stackedWidget->setObjectName("stackedWidget");
         stackedWidget->setLayoutDirection(Qt::LayoutDirection::LeftToRight);
@@ -185,6 +193,14 @@ public:
 
         horizontalLayout_5->addWidget(recordButton);
 
+        screenshotButton = new QPushButton(streamScreen);
+        screenshotButton->setObjectName("screenshotButton");
+        screenshotButton->setLayoutDirection(Qt::LayoutDirection::RightToLeft);
+        QIcon icon4(QIcon::fromTheme(QIcon::ThemeIcon::Phone));
+        screenshotButton->setIcon(icon4);
+
+        horizontalLayout_5->addWidget(screenshotButton);
+
         resolutionButton = new QPushButton(streamScreen);
         resolutionButton->setObjectName("resolutionButton");
         QSizePolicy sizePolicy2(QSizePolicy::Policy::Fixed, QSizePolicy::Policy::Fixed);
@@ -193,8 +209,8 @@ public:
         sizePolicy2.setHeightForWidth(resolutionButton->sizePolicy().hasHeightForWidth());
         resolutionButton->setSizePolicy(sizePolicy2);
         resolutionButton->setLayoutDirection(Qt::LayoutDirection::RightToLeft);
-        QIcon icon4(QIcon::fromTheme(QIcon::ThemeIcon::VideoDisplay));
-        resolutionButton->setIcon(icon4);
+        QIcon icon5(QIcon::fromTheme(QIcon::ThemeIcon::VideoDisplay));
+        resolutionButton->setIcon(icon5);
 
         horizontalLayout_5->addWidget(resolutionButton);
 
@@ -231,17 +247,45 @@ public:
 
         verticalLayout_5->addLayout(verticalLayout_3);
 
+        horizontalLayout_3 = new QHBoxLayout();
+        horizontalLayout_3->setObjectName("horizontalLayout_3");
+        horizontalSpacer_5 = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
+
+        horizontalLayout_3->addItem(horizontalSpacer_5);
+
+        stream1Button = new QRadioButton(streamScreen);
+        stream1Button->setObjectName("stream1Button");
+
+        horizontalLayout_3->addWidget(stream1Button);
+
+        stream2Button = new QRadioButton(streamScreen);
+        stream2Button->setObjectName("stream2Button");
+
+        horizontalLayout_3->addWidget(stream2Button);
+
+        Stream3 = new QRadioButton(streamScreen);
+        Stream3->setObjectName("Stream3");
+
+        horizontalLayout_3->addWidget(Stream3);
+
+        horizontalSpacer_6 = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
+
+        horizontalLayout_3->addItem(horizontalSpacer_6);
+
+
+        verticalLayout_5->addLayout(horizontalLayout_3);
+
         stackedWidget->addWidget(streamScreen);
         settingsScreen = new QWidget();
         settingsScreen->setObjectName("settingsScreen");
         stackedWidget->addWidget(settingsScreen);
 
-        horizontalLayout_2->addWidget(stackedWidget);
+        horizontalLayout_4->addWidget(stackedWidget);
 
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 734, 23));
+        menubar->setGeometry(QRect(0, 0, 743, 23));
         menubar->setLayoutDirection(Qt::LayoutDirection::LeftToRight);
         menuFile = new QMenu(menubar);
         menuFile->setObjectName("menuFile");
@@ -263,7 +307,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -281,8 +325,12 @@ public:
         settingsButton->setText(QCoreApplication::translate("MainWindow", "Settings ", nullptr));
         stopButton->setText(QCoreApplication::translate("MainWindow", "Stop ", nullptr));
         recordButton->setText(QCoreApplication::translate("MainWindow", "Record ", nullptr));
+        screenshotButton->setText(QCoreApplication::translate("MainWindow", "Prt Sc", nullptr));
         resolutionButton->setText(QCoreApplication::translate("MainWindow", "Resolution ", nullptr));
         zoomLabel_2->setText(QCoreApplication::translate("MainWindow", "Zoom", nullptr));
+        stream1Button->setText(QCoreApplication::translate("MainWindow", "Stream 1", nullptr));
+        stream2Button->setText(QCoreApplication::translate("MainWindow", "Stream 2", nullptr));
+        Stream3->setText(QCoreApplication::translate("MainWindow", "Stream 3", nullptr));
         menuFile->setTitle(QCoreApplication::translate("MainWindow", "&File", nullptr));
         menuStream->setTitle(QCoreApplication::translate("MainWindow", "Stream", nullptr));
     } // retranslateUi

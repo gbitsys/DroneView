@@ -465,7 +465,6 @@
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
-/home/giorgos/Documents/DroneView/videomanager.cpp
 /home/giorgos/Documents/DroneView/gstreamermanager.h
  mmc:Q_OBJECT
  mdp:/home/giorgos/Documents/DroneView/build/Desktop_Qt_6_11_1-Debug/DroneView_autogen/moc_predefs.h
@@ -1055,6 +1054,7 @@
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h
  mdp:/usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h
+/home/giorgos/Documents/DroneView/videomanager.cpp
 /home/giorgos/Documents/DroneView/mainwindow.h
  mmc:Q_OBJECT
  mdp:/home/giorgos/Documents/DroneView/build/Desktop_Qt_6_11_1-Debug/DroneView_autogen/moc_predefs.h
@@ -2023,7 +2023,6 @@
 /home/giorgos/Documents/DroneView/main.cpp
 /home/giorgos/Documents/DroneView/mainwindow.cpp
  uic:./ui_mainwindow.h
-/home/giorgos/Documents/DroneView/gstreamermanager.cpp
 /home/giorgos/Documents/DroneView/videomanager.h
  mmc:Q_OBJECT
  mdp:/home/giorgos/Documents/DroneView/build/Desktop_Qt_6_11_1-Debug/DroneView_autogen/moc_predefs.h
@@ -2976,3 +2975,4 @@
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/xsavesintrin.h
  mdp:/usr/lib/gcc/x86_64-linux-gnu/13/include/xtestintrin.h
 /home/giorgos/Documents/DroneView/aspectratiolabel.cpp
+/home/giorgos/Documents/DroneView/gstreamermanager.cpp

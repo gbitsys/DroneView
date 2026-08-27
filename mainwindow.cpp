@@ -1,9 +1,6 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 
-// ΣΗΜΕΙΩΣΗ: Δεν χρειάζεται να κάνεις #include "AspectRatioLabel.h" εδώ,
-// το φροντίζει αυτόματα το αρχείο ui_mainwindow.h μετά το Promote!
-
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -26,11 +23,11 @@ MainWindow::MainWindow(QWidget *parent)
         ui->imageLabel->setPixmap(QPixmap(defaultImage));
     } else {
         qDebug() << "Error: Image not found at" << defaultImage;
-        // Αν δεν βρει την εικόνα, βάζει ένα κείμενο ώστε να ξέρεις τι λείπει
         ui->imageLabel->setText("No Signal / Waiting for drone stream...");
     }
 
     videoManager = new VideoManager(ui->videoWidget, this);
+    //videoManager->setUrlSource(url);
     videoManager->setUrlSource("sample-5s.mp4"); //sample-5s.mp4
 
 }
@@ -87,7 +84,7 @@ void MainWindow::setupResolutionMenu() {
 
         // \u25BE unicode character for down arrow
 
-        // εδώ βάζεις τη δική σου λογική, π.χ. αλλαγή ποιότητας βίντεο
+        // video quality change here !
         // changeVideoQuality(m_currentResolution);
     }
 
