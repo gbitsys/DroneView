@@ -6,6 +6,7 @@
 #include <QAudioOutput>
 #include <QVideoWidget>
 #include <QtMultimedia>
+//#include <gst/gst.h>
 
 class VideoManager : public QObject
 {

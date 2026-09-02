@@ -13,9 +13,11 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->stopButton, &QPushButton::clicked, this, &MainWindow::stopStream);
     connect(ui->resolutionButton, &QPushButton::clicked, this, &MainWindow::setupResolutionMenu);
 
-    // default video before user activates the stream from drone
+    qputenv("QT_MEDIA_BACKEND", "gstreamer"); //force gstreamer instead of ffmpeg
+    // welcome page image
     QString defaultImage = QCoreApplication::applicationDirPath() + "/wait_image.jpg";
     QString url = "udp://127.0.0.1:5000";
+    //QString url = "udp://192.168.144.50:5600"; // siyi hm30
 
     // Checking if image (in wait mode) exists
     if (QFileInfo::exists(defaultImage)) {
@@ -27,8 +29,8 @@ MainWindow::MainWindow(QWidget *parent)
     }
 
     videoManager = new VideoManager(ui->videoWidget, this);
-    //videoManager->setUrlSource(url);
-    videoManager->setUrlSource("sample-5s.mp4"); //sample-5s.mp4
+    videoManager->setUrlSource(url);
+    //videoManager->setUrlSource("sample-5s.mp4"); //sample-5s.mp4
 
 }
 
