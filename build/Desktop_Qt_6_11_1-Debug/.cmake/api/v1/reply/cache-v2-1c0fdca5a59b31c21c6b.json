@@ -1483,7 +1483,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "-I/usr/include/gstreamer-1.0;-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include;-I/usr/include;-pthread;-I/usr/include/x86_64-linux-gnu"
+			"value" : "-I/usr/include/gstreamer-1.0;-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include;-I/usr/include;-I/usr/include/x86_64-linux-gnu;-pthread;-I/usr/include/orc-0.4"
 		},
 		{
 			"name" : "GST_CFLAGS_I",
@@ -1531,7 +1531,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/include"
+			"value" : ""
 		},
 		{
 			"name" : "GST_INCLUDE_DIRS",
@@ -1543,7 +1543,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/include/gstreamer-1.0;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include;/usr/include;/usr/include/x86_64-linux-gnu"
+			"value" : "/usr/include/gstreamer-1.0;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include;/usr/include;/usr/include/x86_64-linux-gnu;/usr/include/orc-0.4"
 		},
 		{
 			"name" : "GST_LDFLAGS",
@@ -1555,7 +1555,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "-L/usr/lib/x86_64-linux-gnu;-lgstreamer-1.0;-lgobject-2.0;-lglib-2.0"
+			"value" : "-L/usr/lib/x86_64-linux-gnu;-lgstvideo-1.0;-lgstbase-1.0;-lgstreamer-1.0;-lgobject-2.0;-lglib-2.0"
 		},
 		{
 			"name" : "GST_LDFLAGS_OTHER",
@@ -1579,7 +1579,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/lib/x86_64-linux-gnu"
+			"value" : ""
 		},
 		{
 			"name" : "GST_LIBRARIES",
@@ -1591,7 +1591,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "gstreamer-1.0;gobject-2.0;glib-2.0"
+			"value" : "gstvideo-1.0;gstbase-1.0;gstreamer-1.0;gobject-2.0;glib-2.0"
 		},
 		{
 			"name" : "GST_LIBRARY_DIRS",
@@ -1663,7 +1663,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "gstreamer-1.0"
+			"value" : ""
 		},
 		{
 			"name" : "GST_PREFIX",
@@ -1675,7 +1675,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr"
+			"value" : ""
 		},
 		{
 			"name" : "GST_STATIC_CFLAGS",
@@ -1687,7 +1687,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "-I/usr/include/gstreamer-1.0;-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include;-I/usr/include;-pthread;-I/usr/include/x86_64-linux-gnu;-DLZMA_API_STATIC"
+			"value" : "-I/usr/include/gstreamer-1.0;-I/usr/include/glib-2.0;-I/usr/lib/x86_64-linux-gnu/glib-2.0/include;-I/usr/include;-I/usr/include/x86_64-linux-gnu;-pthread;-I/usr/include/orc-0.4;-DLZMA_API_STATIC;-DLZMA_API_STATIC;-DLZMA_API_STATIC"
 		},
 		{
 			"name" : "GST_STATIC_CFLAGS_I",
@@ -1711,7 +1711,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "-pthread;-DLZMA_API_STATIC"
+			"value" : "-pthread;-DLZMA_API_STATIC;-DLZMA_API_STATIC;-DLZMA_API_STATIC"
 		},
 		{
 			"name" : "GST_STATIC_INCLUDE_DIRS",
@@ -1723,7 +1723,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/include/gstreamer-1.0;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include;/usr/include;/usr/include/x86_64-linux-gnu"
+			"value" : "/usr/include/gstreamer-1.0;/usr/include/glib-2.0;/usr/lib/x86_64-linux-gnu/glib-2.0/include;/usr/include;/usr/include/x86_64-linux-gnu;/usr/include/orc-0.4"
 		},
 		{
 			"name" : "GST_STATIC_LDFLAGS",
@@ -1735,7 +1735,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "-L/usr/lib/x86_64-linux-gnu;-lgstreamer-1.0;-lm;-ldl;-lm;-pthread;-L/usr/lib/x86_64-linux-gnu;-lpcre2-8;-lgobject-2.0;-lglib-2.0;-lm;-pthread;-L/usr/lib/x86_64-linux-gnu;-lpcre2-8;-lffi;-L/usr/lib/x86_64-linux-gnu;-lgmodule-2.0;-pthread;-L/usr/lib/x86_64-linux-gnu;-lglib-2.0;-lm;-pthread;-L/usr/lib/x86_64-linux-gnu;-lpcre2-8;-lunwind;-ldw;-lbz2;-lelf;-L/usr/lib/x86_64-linux-gnu;-L/usr/lib/x86_64-linux-gnu;-lz;-L/usr/lib;-pthread;-L/usr/lib/x86_64-linux-gnu;-L/usr/lib/x86_64-linux-gnu;-lz;-llzma;-pthread;-lpthread;-lzstd;-pthread"
+			"value" : "-L/usr/lib/x86_64-linux-gnu;-lm;-ldl;-lm;-pthread;-L/usr/lib/x86_64-linux-gnu;-lpcre2-8;-lglib-2.0;-lm;-pthread;-L/usr/lib/x86_64-linux-gnu;-lpcre2-8;-lffi;-L/usr/lib/x86_64-linux-gnu;-lgmodule-2.0;-pthread;-L/usr/lib/x86_64-linux-gnu;-lm;-pthread;-L/usr/lib/x86_64-linux-gnu;-lpcre2-8;-lbz2;-L/usr/lib/x86_64-linux-gnu;-L/usr/lib/x86_64-linux-gnu;-lz;-L/usr/lib;-pthread;-L/usr/lib/x86_64-linux-gnu;-L/usr/lib/x86_64-linux-gnu;-lz;-llzma;-pthread;-lpthread;-pthread;-lgstvideo-1.0;-lm;-lm;-ldl;-lm;-pthread;-L/usr/lib/x86_64-linux-gnu;-lpcre2-8;-lglib-2.0;-lm;-pthread;-L/usr/lib/x86_64-linux-gnu;-lpcre2-8;-lffi;-L/usr/lib/x86_64-linux-gnu;-lgmodule-2.0;-pthread;-L/usr/lib/x86_64-linux-gnu;-lm;-pthread;-L/usr/lib/x86_64-linux-gnu;-lpcre2-8;-lbz2;-L/usr/lib/x86_64-linux-gnu;-L/usr/lib/x86_64-linux-gnu;-lz;-pthread;-L/usr/lib/x86_64-linux-gnu;-L/usr/lib/x86_64-linux-gnu;-lz;-llzma;-pthread;-lpthread;-pthread;-lgstbase-1.0;-lgstreamer-1.0;-lm;-ldl;-lm;-pthread;-L/usr/lib/x86_64-linux-gnu;-lpcre2-8;-lglib-2.0;-lm;-pthread;-L/usr/lib/x86_64-linux-gnu;-lpcre2-8;-lffi;-L/usr/lib/x86_64-linux-gnu;-pthread;-L/usr/lib/x86_64-linux-gnu;-lglib-2.0;-lm;-pthread;-L/usr/lib/x86_64-linux-gnu;-lpcre2-8;-lunwind;-ldw;-lbz2;-lelf;-L/usr/lib/x86_64-linux-gnu;-L/usr/lib/x86_64-linux-gnu;-lz;-pthread;-L/usr/lib/x86_64-linux-gnu;-L/usr/lib/x86_64-linux-gnu;-lz;-llzma;-pthread;-lpthread;-lzstd;-pthread;-L/usr/lib/x86_64-linux-gnu;-lm;-pthread;-L/usr/lib/x86_64-linux-gnu;-lpcre2-8;-lgobject-2.0;-lm;-L/usr/lib/x86_64-linux-gnu;-lpcre2-8;-lffi;-lgmodule-2.0;-pthread;-lglib-2.0;-lm;-pthread;-L/usr/lib/x86_64-linux-gnu;-lpcre2-8;-L/usr/lib/x86_64-linux-gnu;-lorc-0.4;-lm;-pthread"
 		},
 		{
 			"name" : "GST_STATIC_LDFLAGS_OTHER",
@@ -1747,7 +1747,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "-pthread;-pthread;-pthread;-pthread;-pthread;-pthread;-pthread"
+			"value" : "-pthread;-pthread;-pthread;-pthread;-pthread;-pthread;-pthread;-pthread;-pthread;-pthread;-pthread;-pthread;-pthread;-pthread;-pthread;-pthread;-pthread;-pthread;-pthread;-pthread;-pthread;-pthread;-pthread;-pthread;-pthread"
 		},
 		{
 			"name" : "GST_STATIC_LIBDIR",
@@ -1771,7 +1771,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "gstreamer-1.0;m;dl;m;pcre2-8;gobject-2.0;glib-2.0;m;pcre2-8;ffi;gmodule-2.0;glib-2.0;m;pcre2-8;unwind;dw;bz2;elf;z;z;lzma;pthread;zstd"
+			"value" : "m;dl;m;pcre2-8;glib-2.0;m;pcre2-8;ffi;gmodule-2.0;m;pcre2-8;bz2;z;z;lzma;pthread;gstvideo-1.0;m;m;dl;m;pcre2-8;glib-2.0;m;pcre2-8;ffi;gmodule-2.0;m;pcre2-8;bz2;z;z;lzma;pthread;gstbase-1.0;gstreamer-1.0;m;dl;m;pcre2-8;glib-2.0;m;pcre2-8;ffi;glib-2.0;m;pcre2-8;unwind;dw;bz2;elf;z;z;lzma;pthread;zstd;m;pcre2-8;gobject-2.0;m;pcre2-8;ffi;gmodule-2.0;glib-2.0;m;pcre2-8;orc-0.4;m"
 		},
 		{
 			"name" : "GST_STATIC_LIBRARY_DIRS",
@@ -1783,7 +1783,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu"
+			"value" : "/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu;/usr/lib/x86_64-linux-gnu"
 		},
 		{
 			"name" : "GST_STATIC_LIBS",
@@ -1843,7 +1843,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1.24.2"
+			"value" : ""
 		},
 		{
 			"name" : "GST_gstreamer-1.0_INCLUDEDIR",
@@ -1855,7 +1855,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "GST_gstreamer-1.0_LIBDIR",
@@ -1867,7 +1867,19 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "/usr/lib/x86_64-linux-gnu"
+		},
+		{
+			"name" : "GST_gstreamer-1.0_MODULE_NAME",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "gstreamer-1.0"
 		},
 		{
 			"name" : "GST_gstreamer-1.0_PREFIX",
@@ -1879,7 +1891,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "/usr"
 		},
 		{
 			"name" : "GST_gstreamer-1.0_VERSION",
@@ -1891,7 +1903,67 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "1.24.2"
+		},
+		{
+			"name" : "GST_gstreamer-video-1.0_INCLUDEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/include"
+		},
+		{
+			"name" : "GST_gstreamer-video-1.0_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/lib/x86_64-linux-gnu"
+		},
+		{
+			"name" : "GST_gstreamer-video-1.0_MODULE_NAME",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "gstreamer-video-1.0"
+		},
+		{
+			"name" : "GST_gstreamer-video-1.0_PREFIX",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr"
+		},
+		{
+			"name" : "GST_gstreamer-video-1.0_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1.24.2"
 		},
 		{
 			"name" : "HAVE_STDATOMIC",
@@ -8231,7 +8303,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "REQUIRED;gstreamer-1.0"
+			"value" : "REQUIRED;IMPORTED_TARGET;gstreamer-1.0;gstreamer-video-1.0"
 		},
 		{
 			"name" : "__pkg_config_checked_GST",
@@ -8278,6 +8350,22 @@
 			"value" : "/usr/lib/x86_64-linux-gnu/libgobject-2.0.so"
 		},
 		{
+			"name" : "pkgcfg_lib_GST_gstbase-1.0",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/libgstbase-1.0.so"
+		},
+		{
 			"name" : "pkgcfg_lib_GST_gstreamer-1.0",
 			"properties" : 
 			[
@@ -8292,6 +8380,22 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/lib/x86_64-linux-gnu/libgstreamer-1.0.so"
+		},
+		{
+			"name" : "pkgcfg_lib_GST_gstvideo-1.0",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/libgstvideo-1.0.so"
 		},
 		{
 			"name" : "prefix_result",

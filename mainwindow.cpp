@@ -13,7 +13,6 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->stopButton, &QPushButton::clicked, this, &MainWindow::stopStream);
     connect(ui->resolutionButton, &QPushButton::clicked, this, &MainWindow::setupResolutionMenu);
 
-    qputenv("QT_MEDIA_BACKEND", "gstreamer"); //force gstreamer instead of ffmpeg
     // welcome page image
     QString defaultImage = QCoreApplication::applicationDirPath() + "/wait_image.jpg";
     QString url = "udp://127.0.0.1:5000";
@@ -28,9 +27,10 @@ MainWindow::MainWindow(QWidget *parent)
         ui->imageLabel->setText("No Signal / Waiting for drone stream...");
     }
 
-    videoManager = new VideoManager(ui->videoWidget, this);
-    videoManager->setUrlSource(url);
-    //videoManager->setUrlSource("sample-5s.mp4"); //sample-5s.mp4
+    videoManager = new VideoManager(ui->gstVideoWidget, this);
+    videoManager->setUrlSource("https://gstreamer.freedesktop.org/data/media/sintel_trailer-480p.webm");
+    // alternative for drone e.g. UDP h264 stream
+    // manager->setCustomPipeline("udpsrc port=5600 ! application/x-rtp ! rtph264depay ! avdec_h264 ! videoconvert ! video/x-raw,format=RGB ! appsink name=mysink emit-signals=true drop=true max-buffers=1");
 
 }
 

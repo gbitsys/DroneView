@@ -133,17 +133,17 @@
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_5">
         <item>
+         <widget class="GstVideoWidget" name="gstVideoWidget">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </item>
+        <item>
          <layout class="QVBoxLayout" name="verticalLayout_3">
-          <item>
-           <widget class="QVideoWidget" name="videoWidget" native="true">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-           </widget>
-          </item>
           <item>
            <layout class="QHBoxLayout" name="horizontalLayout_5">
             <item>
@@ -384,10 +384,9 @@
    <header>aspectratiolabel.h</header>
   </customwidget>
   <customwidget>
-   <class>QVideoWidget</class>
-   <extends>QWidget</extends>
-   <header>videowidget.h</header>
-   <container>1</container>
+   <class>GstVideoWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>gstvideowidget.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

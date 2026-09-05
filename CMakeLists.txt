@@ -15,7 +15,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets OpenGLWidgets Mul
 
 # --- for GStreamer ---
 find_package(PkgConfig REQUIRED)
-pkg_check_modules(GST REQUIRED gstreamer-1.0)
+pkg_check_modules(GST REQUIRED IMPORTED_TARGET gstreamer-1.0 gstreamer-video-1.0)
 # ---------------------------------
 
 set(PROJECT_SOURCES
@@ -25,15 +25,18 @@ set(PROJECT_SOURCES
         mainwindow.ui
         aspectratiolabel.cpp
         aspectratiolabel.h
-        gstreamermanager.h
-        gstreamermanager.cpp
+        videomanager.h
+        videomanager.cpp
+        gstvideowidget.h
+
+
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(DroneView
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        videomanager.h videomanager.cpp
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET DroneView APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
@@ -57,6 +60,7 @@ target_link_libraries(DroneView PRIVATE
     Qt${QT_VERSION_MAJOR}::Widgets
     Qt${QT_VERSION_MAJOR}::OpenGLWidgets
     Qt${QT_VERSION_MAJOR}::MultimediaWidgets
+    PkgConfig::GST # for GStreamer
 )
 
 # <-- ${GST_INCLUDE_DIRS} for the headers of GStreamer

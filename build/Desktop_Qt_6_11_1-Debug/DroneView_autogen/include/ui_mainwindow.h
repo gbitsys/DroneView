@@ -12,7 +12,6 @@
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
 #include <QtGui/QIcon>
-#include <QtMultimediaWidgets/QVideoWidget>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
@@ -28,6 +27,7 @@
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 #include "aspectratiolabel.h"
+#include "gstvideowidget.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -52,8 +52,8 @@ public:
     QSpacerItem *horizontalSpacer_4;
     QWidget *streamScreen;
     QVBoxLayout *verticalLayout_5;
+    GstVideoWidget *gstVideoWidget;
     QVBoxLayout *verticalLayout_3;
-    QVideoWidget *videoWidget;
     QHBoxLayout *horizontalLayout_5;
     QSpacerItem *horizontalSpacer;
     QPushButton *stopButton;
@@ -159,18 +159,18 @@ public:
         streamScreen->setLayoutDirection(Qt::LayoutDirection::LeftToRight);
         verticalLayout_5 = new QVBoxLayout(streamScreen);
         verticalLayout_5->setObjectName("verticalLayout_5");
-        verticalLayout_3 = new QVBoxLayout();
-        verticalLayout_3->setObjectName("verticalLayout_3");
-        videoWidget = new QVideoWidget(streamScreen);
-        videoWidget->setObjectName("videoWidget");
+        gstVideoWidget = new GstVideoWidget(streamScreen);
+        gstVideoWidget->setObjectName("gstVideoWidget");
         QSizePolicy sizePolicy1(QSizePolicy::Policy::MinimumExpanding, QSizePolicy::Policy::MinimumExpanding);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(videoWidget->sizePolicy().hasHeightForWidth());
-        videoWidget->setSizePolicy(sizePolicy1);
+        sizePolicy1.setHeightForWidth(gstVideoWidget->sizePolicy().hasHeightForWidth());
+        gstVideoWidget->setSizePolicy(sizePolicy1);
 
-        verticalLayout_3->addWidget(videoWidget);
+        verticalLayout_5->addWidget(gstVideoWidget);
 
+        verticalLayout_3 = new QVBoxLayout();
+        verticalLayout_3->setObjectName("verticalLayout_3");
         horizontalLayout_5 = new QHBoxLayout();
         horizontalLayout_5->setObjectName("horizontalLayout_5");
         horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);

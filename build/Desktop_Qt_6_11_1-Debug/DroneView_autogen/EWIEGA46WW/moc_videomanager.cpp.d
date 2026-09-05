@@ -1,236 +1,84 @@
 /home/giorgos/Documents/DroneView/build/Desktop_Qt_6_11_1-Debug/DroneView_autogen/EWIEGA46WW/moc_videomanager.cpp: /home/giorgos/Documents/DroneView/videomanager.h \
   /home/giorgos/Documents/DroneView/build/Desktop_Qt_6_11_1-Debug/DroneView_autogen/moc_predefs.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QByteArray \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QCryptographicHash \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QDeadlineTimer \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QEvent \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QFlags \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QHash \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QIODevice \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QList \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QMap \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QMargins \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QMetaType \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QMutex \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QObject \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QRect \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QSharedDataPointer \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QSize \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QSizeF \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QString \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QStringList \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QUrl \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QVariant \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QtCore \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QtCoreDepends \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/q17memory.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/q20algorithm.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/q20bit.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/q20chrono.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/q20functional.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/q20iterator.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/q20map.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/q20memory.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/q20type_traits.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/q20utility.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/q20vector.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/q23functional.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/q23type_traits.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/q23utility.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/q26numeric.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qabstractanimation.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qabstracteventdispatcher.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qabstractitemmodel.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qabstractnativeeventfilter.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qabstractproxymodel.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qalgorithms.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qalloc.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qanimationgroup.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qanystringview.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qapplicationstatic.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qarraydata.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qarraydataops.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qarraydatapointer.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qassert.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qassociativeiterable.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qatomic.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qatomic_cxx11.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qatomicscopedvaluerollback.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qbasicatomic.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qbasictimer.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qbindingstorage.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qbitarray.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qbuffer.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qbytearray.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qbytearrayalgorithms.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qbytearraylist.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qbytearraymatcher.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qbytearrayview.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcache.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcalendar.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcborarray.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcborcommon.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcbormap.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcborstream.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcborstreamreader.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcborstreamwriter.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcborvalue.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qchar.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcheckedint_impl.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qchronotimer.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcollator.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcommandlineoption.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcommandlineparser.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcompare.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcompare_impl.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcomparehelpers.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcompilerdetection.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qconcatenatetablesproxymodel.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qconfig.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qconstructormacros.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcontainerfwd.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcontainerinfo.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcontainertools_impl.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcontiguouscache.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcoreapplication.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcoreapplication_platform.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcoreevent.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qcryptographichash.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qdarwinhelpers.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qdatastream.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qdatetime.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qdeadlinetimer.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qdebug.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qdir.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qdiriterator.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qdirlisting.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qeasingcurve.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qelapsedtimer.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qendian.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qeventloop.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qexception.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qexceptionhandling.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qfactoryinterface.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qfile.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qfiledevice.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qfileinfo.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qfileselector.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qfilesystemwatcher.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qflags.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qfloat16.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qforeach.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qfunctionaltools_impl.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qfunctionpointer.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qfuture.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qfuture_impl.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qfutureinterface.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qfuturesynchronizer.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qfuturewatcher.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qgenericatomic.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qglobal.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qglobalstatic.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qhash.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qhashfunctions.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qidentityproxymodel.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qiodevice.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qiodevicebase.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qitemselectionmodel.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qiterable.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qiterable_impl.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qiterator.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qjsonarray.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qjsondocument.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qjsonobject.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qjsonparseerror.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qjsonvalue.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qlatin1stringmatcher.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qlatin1stringview.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qlibrary.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qlibraryinfo.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qline.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qlist.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qlocale.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qlockfile.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qlogging.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qloggingcategory.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qmalloc.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qmap.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qmargins.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qmath.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qmessageauthenticationcode.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qmetaassociation.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qmetacontainer.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qmetaobject.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qmetasequence.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qmetatype.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qmimedata.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qmimedatabase.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qmimetype.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qminmax.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qmutex.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qnamespace.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qnativeinterface.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qnumeric.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qobject.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qobject_impl.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qobjectcleanuphandler.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qobjectdefs.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qobjectdefs_impl.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qoperatingsystemversion.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qoverload.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qpair.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qparallelanimationgroup.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qpauseanimation.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qpermissions.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qplugin.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qpluginloader.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qpoint.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qpointer.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qprocess.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qprocessordetection.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qpromise.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qproperty.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qpropertyanimation.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qpropertyprivate.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qquasivirtual_impl.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qqueue.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qrandom.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qrangemodel.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qrangemodel_impl.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qrangemodeladapter.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qrangemodeladapter_impl.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qreadwritelock.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qrect.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qrefcount.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qregularexpression.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qresource.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qresultstore.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qrunnable.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qsavefile.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qscopedpointer.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qscopedvaluerollback.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qscopeguard.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qsemaphore.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qsequentialanimationgroup.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qsequentialiterable.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qset.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qsettings.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qshareddata.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qshareddata_impl.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qsharedmemory.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qsharedpointer.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qsharedpointer_impl.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qsignalmapper.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qsimd.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qsize.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qsocketnotifier.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qsortfilterproxymodel.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qspan.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qstack.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qstandardpaths.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qstaticlatin1stringmatcher.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qstdlibdetection.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qstorageinfo.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qstring.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qstringalgorithms.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qstringbuilder.h \
@@ -238,15 +86,12 @@
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qstringconverter_base.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qstringfwd.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qstringlist.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qstringlistmodel.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qstringliteral.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qstringmatcher.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qstringtokenizer.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qstringview.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qswap.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qsysinfo.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qsystemdetection.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qsystemsemaphore.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtaggedpointer.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtclasshelpermacros.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtconfiginclude.h \
@@ -254,289 +99,39 @@
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtcore-config.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtcoreexports.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtcoreglobal.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtcoreversion.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtdeprecationdefinitions.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtdeprecationmarkers.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtemporarydir.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtemporaryfile.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtenvironmentvariables.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtextboundaryfinder.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtextstream.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtformat_impl.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qthread.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qthreadpool.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qthreadstorage.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtimeline.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtimer.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtimezone.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtipccommon.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtmetamacros.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtmocconstants.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtnoop.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtpreprocessorsupport.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtranslator.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtransposeproxymodel.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtresource.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtsan_impl.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtsymbolmacros.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qttranslation.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qttypetraits.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtversion.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtversionchecks.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtypeinfo.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtyperevision.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qtypes.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qurl.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qurlquery.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qutf8stringview.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/quuid.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qvariant.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qvariantanimation.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qvarianthash.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qvariantlist.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qvariantmap.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qvarlengtharray.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qvector.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qversionnumber.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qversiontagging.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qwaitcondition.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qwineventnotifier.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qxmlstream.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qxpfunctional.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qxptype_traits.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/qyieldcpu.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/QPaintDevice \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/QPaintDeviceWindow \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/QSurfaceFormat \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/QTransform \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/QWindow \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/QtGui \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/QtGuiDepends \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qabstractfileiconprovider.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qaccessibilityhints.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qaccessible.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qaccessible_base.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qaccessiblebridge.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qaccessibleobject.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qaccessibleplugin.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qaction.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qactiongroup.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qbackingstore.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qbitmap.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qbrush.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qclipboard.h \
+  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/QImage \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qcolor.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qcolorspace.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qcolortransform.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qcursor.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qdesktopservices.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qdrag.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qevent.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qeventpoint.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qfilesystemmodel.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qfont.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qfontdatabase.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qfontinfo.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qfontmetrics.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qfontvariableaxis.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qgenericmatrix.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qgenericplugin.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qgenericpluginfactory.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qglyphrun.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qguiapplication.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qguiapplication_platform.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qicon.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qiconengine.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qiconengineplugin.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qimage.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qimageiohandler.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qimagereader.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qimagewriter.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qinputdevice.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qinputmethod.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qkeysequence.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qmatrix4x4.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qmovie.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qoffscreensurface.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qoffscreensurface_platform.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qopengl.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qopenglcontext.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qopenglcontext_platform.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qopenglext.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qopenglextrafunctions.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qopenglfunctions.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qpagedpaintdevice.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qpagelayout.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qpageranges.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qpagesize.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qpaintdevice.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qpaintdevicewindow.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qpaintengine.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qpainter.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qpainterpath.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qpainterstateguard.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qpalette.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qpdfoutputintent.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qpdfwriter.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qpen.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qpicture.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qpixelformat.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qpixmap.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qpixmapcache.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qpointingdevice.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qpolygon.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qquaternion.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qrasterwindow.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qrawfont.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qregion.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qrgb.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qrgba64.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qrgbafloat.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qscreen.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qscreen_platform.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qsessionmanager.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qshortcut.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qstandarditemmodel.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qstatictext.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qstylehints.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qsurface.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qsurfaceformat.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qsyntaxhighlighter.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qtextcursor.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qtextdocument.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qtextdocumentfragment.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qtextdocumentwriter.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qtextformat.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qtextlayout.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qtextlist.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qtextobject.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qtextoption.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qtexttable.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qtgui-config.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qtguiexports.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qtguiglobal.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qtguiversion.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qtransform.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qundogroup.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qundostack.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qvalidator.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qvector2d.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qvector3d.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qvector4d.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qvectornd.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qwindow.h \
   /home/giorgos/Qt/6.11.1/gcc_64/include/QtGui/qwindowdefs.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/QAudioOutput \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/QMediaPlayer \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/QtMultimedia \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/QtMultimediaDepends \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qabstractvideobuffer.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qaudio.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qaudiobuffer.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qaudiobufferinput.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qaudiobufferoutput.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qaudiodecoder.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qaudiodevice.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qaudioformat.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qaudioinput.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qaudiooutput.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qaudiosink.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qaudiosource.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qcamera.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qcameradevice.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qcapturablewindow.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qimagecapture.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qmediacapturesession.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qmediadevices.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qmediaformat.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qmediametadata.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qmediaplayer.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qmediarecorder.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qmediatimerange.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qplaybackoptions.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qscreencapture.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qsoundeffect.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qtaudio.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qtmultimedia-config.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qtmultimediaexports.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qtmultimediaglobal.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qtmultimediaversion.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qtvideo.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qvideoframe.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qvideoframeformat.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qvideoframeinput.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qvideosink.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qwavedecoder.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimedia/qwindowcapture.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimediaWidgets/QVideoWidget \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimediaWidgets/qtmultimediawidgetsexports.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimediaWidgets/qtmultimediawidgetsglobal.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtMultimediaWidgets/qvideowidget.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/QNetworkAccessManager \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/QNetworkRequest \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/QSslConfiguration \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/QSslError \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/QSslSocket \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/QTcpServer \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/QtNetwork \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/QtNetworkDepends \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qabstractnetworkcache.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qabstractsocket.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qauthenticator.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qdnslookup.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qdtls.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qformdatabuilder.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qhostaddress.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qhostinfo.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qhstspolicy.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qhttp1configuration.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qhttp2configuration.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qhttpheaders.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qhttpmultipart.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qlocalserver.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qlocalsocket.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qnetworkaccessmanager.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qnetworkcookie.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qnetworkcookiejar.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qnetworkdatagram.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qnetworkdiskcache.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qnetworkinformation.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qnetworkinterface.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qnetworkproxy.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qnetworkreply.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qnetworkrequest.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qnetworkrequestfactory.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qocspresponse.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qpassworddigestor.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qrestaccessmanager.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qrestreply.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qssl.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qsslcertificate.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qsslcertificateextension.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qsslcipher.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qsslconfiguration.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qssldiffiehellmanparameters.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qsslellipticcurve.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qsslerror.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qsslkey.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qsslserver.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qsslsocket.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qtcpserver.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qtcpsocket.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qtnetwork-config.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qtnetworkexports.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qtnetworkglobal.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qtnetworkversion.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtNetwork/qudpsocket.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtWidgets/qsizepolicy.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtWidgets/qtwidgets-config.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtWidgets/qtwidgetsexports.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
-  /home/giorgos/Qt/6.11.1/gcc_64/include/QtWidgets/qwidget.h \
-  /usr/include/GL/gl.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -553,16 +148,12 @@
   /usr/include/c++/13/bits/allocated_ptr.h \
   /usr/include/c++/13/bits/allocator.h \
   /usr/include/c++/13/bits/atomic_base.h \
-  /usr/include/c++/13/bits/atomic_futex.h \
   /usr/include/c++/13/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/13/bits/basic_ios.h \
-  /usr/include/c++/13/bits/basic_ios.tcc \
   /usr/include/c++/13/bits/basic_string.h \
   /usr/include/c++/13/bits/basic_string.tcc \
   /usr/include/c++/13/bits/char_traits.h \
   /usr/include/c++/13/bits/charconv.h \
   /usr/include/c++/13/bits/chrono.h \
-  /usr/include/c++/13/bits/codecvt.h \
   /usr/include/c++/13/bits/concept_check.h \
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
@@ -572,10 +163,6 @@
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
   /usr/include/c++/13/bits/exception_ptr.h \
-  /usr/include/c++/13/bits/fs_dir.h \
-  /usr/include/c++/13/bits/fs_fwd.h \
-  /usr/include/c++/13/bits/fs_ops.h \
-  /usr/include/c++/13/bits/fs_path.h \
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
   /usr/include/c++/13/bits/hash_bytes.h \
@@ -583,15 +170,9 @@
   /usr/include/c++/13/bits/hashtable_policy.h \
   /usr/include/c++/13/bits/invoke.h \
   /usr/include/c++/13/bits/ios_base.h \
-  /usr/include/c++/13/bits/istream.tcc \
   /usr/include/c++/13/bits/list.tcc \
   /usr/include/c++/13/bits/locale_classes.h \
   /usr/include/c++/13/bits/locale_classes.tcc \
-  /usr/include/c++/13/bits/locale_conv.h \
-  /usr/include/c++/13/bits/locale_facets.h \
-  /usr/include/c++/13/bits/locale_facets.tcc \
-  /usr/include/c++/13/bits/locale_facets_nonio.h \
-  /usr/include/c++/13/bits/locale_facets_nonio.tcc \
   /usr/include/c++/13/bits/localefwd.h \
   /usr/include/c++/13/bits/memory_resource.h \
   /usr/include/c++/13/bits/memoryfwd.h \
@@ -599,15 +180,11 @@
   /usr/include/c++/13/bits/nested_exception.h \
   /usr/include/c++/13/bits/new_allocator.h \
   /usr/include/c++/13/bits/node_handle.h \
-  /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
   /usr/include/c++/13/bits/parse_numbers.h \
   /usr/include/c++/13/bits/postypes.h \
   /usr/include/c++/13/bits/predefined_ops.h \
   /usr/include/c++/13/bits/ptr_traits.h \
-  /usr/include/c++/13/bits/quoted_string.h \
-  /usr/include/c++/13/bits/random.h \
-  /usr/include/c++/13/bits/random.tcc \
   /usr/include/c++/13/bits/range_access.h \
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
@@ -615,11 +192,8 @@
   /usr/include/c++/13/bits/shared_ptr_atomic.h \
   /usr/include/c++/13/bits/shared_ptr_base.h \
   /usr/include/c++/13/bits/specfun.h \
-  /usr/include/c++/13/bits/sstream.tcc \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/std_function.h \
-  /usr/include/c++/13/bits/std_mutex.h \
-  /usr/include/c++/13/bits/std_thread.h \
   /usr/include/c++/13/bits/stl_algo.h \
   /usr/include/c++/13/bits/stl_algobase.h \
   /usr/include/c++/13/bits/stl_bvector.h \
@@ -632,12 +206,10 @@
   /usr/include/c++/13/bits/stl_list.h \
   /usr/include/c++/13/bits/stl_map.h \
   /usr/include/c++/13/bits/stl_multimap.h \
-  /usr/include/c++/13/bits/stl_multiset.h \
   /usr/include/c++/13/bits/stl_numeric.h \
   /usr/include/c++/13/bits/stl_pair.h \
   /usr/include/c++/13/bits/stl_raw_storage_iter.h \
   /usr/include/c++/13/bits/stl_relops.h \
-  /usr/include/c++/13/bits/stl_set.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
   /usr/include/c++/13/bits/stl_tree.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
@@ -648,10 +220,8 @@
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/uniform_int_dist.h \
-  /usr/include/c++/13/bits/unique_lock.h \
   /usr/include/c++/13/bits/unique_ptr.h \
   /usr/include/c++/13/bits/unordered_map.h \
-  /usr/include/c++/13/bits/unordered_set.h \
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
@@ -660,12 +230,9 @@
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/chrono \
-  /usr/include/c++/13/climits \
   /usr/include/c++/13/clocale \
   /usr/include/c++/13/cmath \
-  /usr/include/c++/13/codecvt \
   /usr/include/c++/13/compare \
-  /usr/include/c++/13/condition_variable \
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdint \
   /usr/include/c++/13/cstdio \
@@ -673,11 +240,9 @@
   /usr/include/c++/13/cstring \
   /usr/include/c++/13/ctime \
   /usr/include/c++/13/cwchar \
-  /usr/include/c++/13/cwctype \
   /usr/include/c++/13/debug/assertions.h \
   /usr/include/c++/13/debug/debug.h \
   /usr/include/c++/13/exception \
-  /usr/include/c++/13/experimental/source_location \
   /usr/include/c++/13/ext/aligned_buffer.h \
   /usr/include/c++/13/ext/alloc_traits.h \
   /usr/include/c++/13/ext/atomicity.h \
@@ -685,36 +250,23 @@
   /usr/include/c++/13/ext/numeric_traits.h \
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
-  /usr/include/c++/13/filesystem \
   /usr/include/c++/13/functional \
-  /usr/include/c++/13/future \
   /usr/include/c++/13/initializer_list \
-  /usr/include/c++/13/iomanip \
-  /usr/include/c++/13/ios \
   /usr/include/c++/13/iosfwd \
-  /usr/include/c++/13/istream \
   /usr/include/c++/13/iterator \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/list \
-  /usr/include/c++/13/locale \
   /usr/include/c++/13/map \
   /usr/include/c++/13/memory \
-  /usr/include/c++/13/memory_resource \
-  /usr/include/c++/13/mutex \
   /usr/include/c++/13/new \
   /usr/include/c++/13/numeric \
   /usr/include/c++/13/optional \
-  /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/glue_numeric_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
-  /usr/include/c++/13/random \
   /usr/include/c++/13/ratio \
-  /usr/include/c++/13/set \
-  /usr/include/c++/13/shared_mutex \
-  /usr/include/c++/13/sstream \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
@@ -736,24 +288,206 @@
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
   /usr/include/c++/13/unordered_map \
-  /usr/include/c++/13/unordered_set \
   /usr/include/c++/13/utility \
   /usr/include/c++/13/variant \
   /usr/include/c++/13/vector \
   /usr/include/c++/13/version \
   /usr/include/ctype.h \
+  /usr/include/dirent.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
-  /usr/include/inttypes.h \
-  /usr/include/libintl.h \
+  /usr/include/glib-2.0/glib-object.h \
+  /usr/include/glib-2.0/glib.h \
+  /usr/include/glib-2.0/glib/deprecated/gallocator.h \
+  /usr/include/glib-2.0/glib/deprecated/gcache.h \
+  /usr/include/glib-2.0/glib/deprecated/gcompletion.h \
+  /usr/include/glib-2.0/glib/deprecated/gmain.h \
+  /usr/include/glib-2.0/glib/deprecated/grel.h \
+  /usr/include/glib-2.0/glib/deprecated/gthread.h \
+  /usr/include/glib-2.0/glib/galloca.h \
+  /usr/include/glib-2.0/glib/garray.h \
+  /usr/include/glib-2.0/glib/gasyncqueue.h \
+  /usr/include/glib-2.0/glib/gatomic.h \
+  /usr/include/glib-2.0/glib/gbacktrace.h \
+  /usr/include/glib-2.0/glib/gbase64.h \
+  /usr/include/glib-2.0/glib/gbitlock.h \
+  /usr/include/glib-2.0/glib/gbookmarkfile.h \
+  /usr/include/glib-2.0/glib/gbytes.h \
+  /usr/include/glib-2.0/glib/gcharset.h \
+  /usr/include/glib-2.0/glib/gchecksum.h \
+  /usr/include/glib-2.0/glib/gconvert.h \
+  /usr/include/glib-2.0/glib/gdataset.h \
+  /usr/include/glib-2.0/glib/gdate.h \
+  /usr/include/glib-2.0/glib/gdatetime.h \
+  /usr/include/glib-2.0/glib/gdir.h \
+  /usr/include/glib-2.0/glib/genviron.h \
+  /usr/include/glib-2.0/glib/gerror.h \
+  /usr/include/glib-2.0/glib/gfileutils.h \
+  /usr/include/glib-2.0/glib/ggettext.h \
+  /usr/include/glib-2.0/glib/ghash.h \
+  /usr/include/glib-2.0/glib/ghmac.h \
+  /usr/include/glib-2.0/glib/ghook.h \
+  /usr/include/glib-2.0/glib/ghostutils.h \
+  /usr/include/glib-2.0/glib/giochannel.h \
+  /usr/include/glib-2.0/glib/gkeyfile.h \
+  /usr/include/glib-2.0/glib/glib-autocleanups.h \
+  /usr/include/glib-2.0/glib/glib-typeof.h \
+  /usr/include/glib-2.0/glib/glib-visibility.h \
+  /usr/include/glib-2.0/glib/glist.h \
+  /usr/include/glib-2.0/glib/gmacros.h \
+  /usr/include/glib-2.0/glib/gmain.h \
+  /usr/include/glib-2.0/glib/gmappedfile.h \
+  /usr/include/glib-2.0/glib/gmarkup.h \
+  /usr/include/glib-2.0/glib/gmem.h \
+  /usr/include/glib-2.0/glib/gmessages.h \
+  /usr/include/glib-2.0/glib/gnode.h \
+  /usr/include/glib-2.0/glib/goption.h \
+  /usr/include/glib-2.0/glib/gpathbuf.h \
+  /usr/include/glib-2.0/glib/gpattern.h \
+  /usr/include/glib-2.0/glib/gpoll.h \
+  /usr/include/glib-2.0/glib/gprimes.h \
+  /usr/include/glib-2.0/glib/gqsort.h \
+  /usr/include/glib-2.0/glib/gquark.h \
+  /usr/include/glib-2.0/glib/gqueue.h \
+  /usr/include/glib-2.0/glib/grand.h \
+  /usr/include/glib-2.0/glib/grcbox.h \
+  /usr/include/glib-2.0/glib/grefcount.h \
+  /usr/include/glib-2.0/glib/grefstring.h \
+  /usr/include/glib-2.0/glib/gregex.h \
+  /usr/include/glib-2.0/glib/gscanner.h \
+  /usr/include/glib-2.0/glib/gsequence.h \
+  /usr/include/glib-2.0/glib/gshell.h \
+  /usr/include/glib-2.0/glib/gslice.h \
+  /usr/include/glib-2.0/glib/gslist.h \
+  /usr/include/glib-2.0/glib/gspawn.h \
+  /usr/include/glib-2.0/glib/gstrfuncs.h \
+  /usr/include/glib-2.0/glib/gstring.h \
+  /usr/include/glib-2.0/glib/gstringchunk.h \
+  /usr/include/glib-2.0/glib/gstrvbuilder.h \
+  /usr/include/glib-2.0/glib/gtestutils.h \
+  /usr/include/glib-2.0/glib/gthread.h \
+  /usr/include/glib-2.0/glib/gthreadpool.h \
+  /usr/include/glib-2.0/glib/gtimer.h \
+  /usr/include/glib-2.0/glib/gtimezone.h \
+  /usr/include/glib-2.0/glib/gtrashstack.h \
+  /usr/include/glib-2.0/glib/gtree.h \
+  /usr/include/glib-2.0/glib/gtypes.h \
+  /usr/include/glib-2.0/glib/gunicode.h \
+  /usr/include/glib-2.0/glib/guri.h \
+  /usr/include/glib-2.0/glib/gutils.h \
+  /usr/include/glib-2.0/glib/guuid.h \
+  /usr/include/glib-2.0/glib/gvariant.h \
+  /usr/include/glib-2.0/glib/gvarianttype.h \
+  /usr/include/glib-2.0/glib/gversion.h \
+  /usr/include/glib-2.0/glib/gversionmacros.h \
+  /usr/include/glib-2.0/gobject/gbinding.h \
+  /usr/include/glib-2.0/gobject/gbindinggroup.h \
+  /usr/include/glib-2.0/gobject/gboxed.h \
+  /usr/include/glib-2.0/gobject/gclosure.h \
+  /usr/include/glib-2.0/gobject/genums.h \
+  /usr/include/glib-2.0/gobject/glib-enumtypes.h \
+  /usr/include/glib-2.0/gobject/glib-types.h \
+  /usr/include/glib-2.0/gobject/gmarshal.h \
+  /usr/include/glib-2.0/gobject/gobject-autocleanups.h \
+  /usr/include/glib-2.0/gobject/gobject-visibility.h \
+  /usr/include/glib-2.0/gobject/gobject.h \
+  /usr/include/glib-2.0/gobject/gparam.h \
+  /usr/include/glib-2.0/gobject/gparamspecs.h \
+  /usr/include/glib-2.0/gobject/gsignal.h \
+  /usr/include/glib-2.0/gobject/gsignalgroup.h \
+  /usr/include/glib-2.0/gobject/gsourceclosure.h \
+  /usr/include/glib-2.0/gobject/gtype.h \
+  /usr/include/glib-2.0/gobject/gtypemodule.h \
+  /usr/include/glib-2.0/gobject/gtypeplugin.h \
+  /usr/include/glib-2.0/gobject/gvalue.h \
+  /usr/include/glib-2.0/gobject/gvaluearray.h \
+  /usr/include/glib-2.0/gobject/gvaluetypes.h \
+  /usr/include/gstreamer-1.0/gst/glib-compat.h \
+  /usr/include/gstreamer-1.0/gst/gst.h \
+  /usr/include/gstreamer-1.0/gst/gstallocator.h \
+  /usr/include/gstreamer-1.0/gst/gstatomicqueue.h \
+  /usr/include/gstreamer-1.0/gst/gstbin.h \
+  /usr/include/gstreamer-1.0/gst/gstbuffer.h \
+  /usr/include/gstreamer-1.0/gst/gstbufferlist.h \
+  /usr/include/gstreamer-1.0/gst/gstbufferpool.h \
+  /usr/include/gstreamer-1.0/gst/gstbus.h \
+  /usr/include/gstreamer-1.0/gst/gstbytearrayinterface.h \
+  /usr/include/gstreamer-1.0/gst/gstcaps.h \
+  /usr/include/gstreamer-1.0/gst/gstcapsfeatures.h \
+  /usr/include/gstreamer-1.0/gst/gstchildproxy.h \
+  /usr/include/gstreamer-1.0/gst/gstclock.h \
+  /usr/include/gstreamer-1.0/gst/gstcompat.h \
+  /usr/include/gstreamer-1.0/gst/gstconfig.h \
+  /usr/include/gstreamer-1.0/gst/gstcontext.h \
+  /usr/include/gstreamer-1.0/gst/gstcontrolbinding.h \
+  /usr/include/gstreamer-1.0/gst/gstcontrolsource.h \
+  /usr/include/gstreamer-1.0/gst/gstdatetime.h \
+  /usr/include/gstreamer-1.0/gst/gstdebugutils.h \
+  /usr/include/gstreamer-1.0/gst/gstdevice.h \
+  /usr/include/gstreamer-1.0/gst/gstdevicemonitor.h \
+  /usr/include/gstreamer-1.0/gst/gstdeviceprovider.h \
+  /usr/include/gstreamer-1.0/gst/gstdeviceproviderfactory.h \
+  /usr/include/gstreamer-1.0/gst/gstdynamictypefactory.h \
+  /usr/include/gstreamer-1.0/gst/gstelement.h \
+  /usr/include/gstreamer-1.0/gst/gstelementfactory.h \
+  /usr/include/gstreamer-1.0/gst/gstelementmetadata.h \
+  /usr/include/gstreamer-1.0/gst/gstenumtypes.h \
+  /usr/include/gstreamer-1.0/gst/gsterror.h \
+  /usr/include/gstreamer-1.0/gst/gstevent.h \
+  /usr/include/gstreamer-1.0/gst/gstformat.h \
+  /usr/include/gstreamer-1.0/gst/gstghostpad.h \
+  /usr/include/gstreamer-1.0/gst/gstinfo.h \
+  /usr/include/gstreamer-1.0/gst/gstiterator.h \
+  /usr/include/gstreamer-1.0/gst/gstmacros.h \
+  /usr/include/gstreamer-1.0/gst/gstmemory.h \
+  /usr/include/gstreamer-1.0/gst/gstmessage.h \
+  /usr/include/gstreamer-1.0/gst/gstmeta.h \
+  /usr/include/gstreamer-1.0/gst/gstminiobject.h \
+  /usr/include/gstreamer-1.0/gst/gstobject.h \
+  /usr/include/gstreamer-1.0/gst/gstpad.h \
+  /usr/include/gstreamer-1.0/gst/gstpadtemplate.h \
+  /usr/include/gstreamer-1.0/gst/gstparamspecs.h \
+  /usr/include/gstreamer-1.0/gst/gstparse.h \
+  /usr/include/gstreamer-1.0/gst/gstpipeline.h \
+  /usr/include/gstreamer-1.0/gst/gstplugin.h \
+  /usr/include/gstreamer-1.0/gst/gstpluginfeature.h \
+  /usr/include/gstreamer-1.0/gst/gstpoll.h \
+  /usr/include/gstreamer-1.0/gst/gstpreset.h \
+  /usr/include/gstreamer-1.0/gst/gstpromise.h \
+  /usr/include/gstreamer-1.0/gst/gstprotection.h \
+  /usr/include/gstreamer-1.0/gst/gstquery.h \
+  /usr/include/gstreamer-1.0/gst/gstregistry.h \
+  /usr/include/gstreamer-1.0/gst/gstsample.h \
+  /usr/include/gstreamer-1.0/gst/gstsegment.h \
+  /usr/include/gstreamer-1.0/gst/gststreamcollection.h \
+  /usr/include/gstreamer-1.0/gst/gststreams.h \
+  /usr/include/gstreamer-1.0/gst/gststructure.h \
+  /usr/include/gstreamer-1.0/gst/gstsystemclock.h \
+  /usr/include/gstreamer-1.0/gst/gsttaglist.h \
+  /usr/include/gstreamer-1.0/gst/gsttagsetter.h \
+  /usr/include/gstreamer-1.0/gst/gsttask.h \
+  /usr/include/gstreamer-1.0/gst/gsttaskpool.h \
+  /usr/include/gstreamer-1.0/gst/gsttoc.h \
+  /usr/include/gstreamer-1.0/gst/gsttocsetter.h \
+  /usr/include/gstreamer-1.0/gst/gsttracer.h \
+  /usr/include/gstreamer-1.0/gst/gsttracerfactory.h \
+  /usr/include/gstreamer-1.0/gst/gsttracerrecord.h \
+  /usr/include/gstreamer-1.0/gst/gsttypefind.h \
+  /usr/include/gstreamer-1.0/gst/gsttypefindfactory.h \
+  /usr/include/gstreamer-1.0/gst/gsturi.h \
+  /usr/include/gstreamer-1.0/gst/gstutils.h \
+  /usr/include/gstreamer-1.0/gst/gstvalue.h \
+  /usr/include/gstreamer-1.0/gst/gstversion.h \
   /usr/include/limits.h \
+  /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/limits.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
+  /usr/include/signal.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdio.h \
@@ -761,29 +495,49 @@
   /usr/include/string.h \
   /usr/include/strings.h \
   /usr/include/time.h \
+  /usr/include/unistd.h \
   /usr/include/wchar.h \
-  /usr/include/wctype.h \
   /usr/include/x86_64-linux-gnu/asm/errno.h \
   /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
   /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/x86_64-linux-gnu/bits/dirent.h \
+  /usr/include/x86_64-linux-gnu/bits/dirent_ext.h \
   /usr/include/x86_64-linux-gnu/bits/endian.h \
   /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
   /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/local_lim.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
   /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
   /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/sched.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/sigaction.h \
+  /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+  /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
+  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
+  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
+  /usr/include/x86_64-linux-gnu/bits/sigstack.h \
+  /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
+  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
+  /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
@@ -804,17 +558,24 @@
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
@@ -824,10 +585,10 @@
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
@@ -835,115 +596,19 @@
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/adxintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/amxbf16intrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/amxcomplexintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/amxfp16intrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/amxint8intrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/amxtileintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx2intrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx5124fmapsintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx5124vnniwintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512bf16intrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512bf16vlintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512bitalgintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512bwintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512cdintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512dqintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512erintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512fintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512fp16intrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512fp16vlintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512ifmaintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512ifmavlintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512pfintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vbmi2intrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vbmi2vlintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vbmiintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vbmivlintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vlbwintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vldqintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vlintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vnniintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vnnivlintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vp2intersectintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vp2intersectvlintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vpopcntdqintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avx512vpopcntdqvlintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avxifmaintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avxintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avxneconvertintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avxvnniint8intrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/avxvnniintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/bmi2intrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/bmiintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/cetintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/cldemoteintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/clflushoptintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/clwbintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/clzerointrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/cmpccxaddintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/enqcmdintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/f16cintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/fmaintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/fxsrintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/gfniintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/hresetintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/ia32intrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/immintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/keylockerintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/lwpintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/lzcntintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/mm_malloc.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/mmintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/movdirintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/mwaitintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/mwaitxintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/pconfigintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/pkuintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/pmmintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/popcntintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/prfchiintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/prfchwintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/raointintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/rdseedintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/rtmintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/serializeintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/sgxintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/shaintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/smmintrin.h \
+  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/tbmintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/tmmintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/tsxldtrkintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/uintrintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/vaesintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/vpclmulqdqintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/waitpkgintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/wbnoinvdintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/wmmintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/x86gprintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/xsavecintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/xsaveintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/xsaveoptintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/xsavesintrin.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/xtestintrin.h
+  /usr/lib/x86_64-linux-gnu/glib-2.0/include/glibconfig.h

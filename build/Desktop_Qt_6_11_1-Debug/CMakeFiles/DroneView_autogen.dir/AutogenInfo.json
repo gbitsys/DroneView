@@ -667,9 +667,9 @@
 			null
 		],
 		[
-			"/home/giorgos/Documents/DroneView/gstreamermanager.h",
+			"/home/giorgos/Documents/DroneView/gstvideowidget.h",
 			"MU",
-			"EWIEGA46WW/moc_gstreamermanager.cpp",
+			"EWIEGA46WW/moc_gstvideowidget.cpp",
 			null
 		],
 		[
@@ -713,6 +713,7 @@
 		"/usr/include/gstreamer-1.0",
 		"/usr/include/glib-2.0",
 		"/usr/lib/x86_64-linux-gnu/glib-2.0/include",
+		"/usr/include/orc-0.4",
 		"/home/giorgos/Qt/6.11.1/gcc_64/include/QtCore",
 		"/home/giorgos/Qt/6.11.1/gcc_64/include",
 		"/home/giorgos/Qt/6.11.1/gcc_64/mkspecs/linux-g++",
@@ -765,7 +766,6 @@
 	"SOURCES" : 
 	[
 		[ "/home/giorgos/Documents/DroneView/aspectratiolabel.cpp", "MU", null ],
-		[ "/home/giorgos/Documents/DroneView/gstreamermanager.cpp", "MU", null ],
 		[ "/home/giorgos/Documents/DroneView/main.cpp", "MU", null ],
 		[ "/home/giorgos/Documents/DroneView/mainwindow.cpp", "MU", null ],
 		[ "/home/giorgos/Documents/DroneView/videomanager.cpp", "MU", null ]
