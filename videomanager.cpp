@@ -13,7 +13,7 @@ VideoManager::VideoManager(GstVideoWidget *videoWidget, QObject *parent)
     , pipeline(nullptr)
 {
     // Connecting the signal (GStreamer thread) with the widget's slot (ui thread)
-    // Note: Qt is using automated Qt::QueuedConnection in cross-thread signals.
+    // Note(!): Qt is using automated Qt::QueuedConnection in cross-thread signals.
     if (videoWidget) {
         connect(this, &VideoManager::newFrameAvailable,
                 videoWidget, &GstVideoWidget::updateFrame);
@@ -101,7 +101,7 @@ GstFlowReturn VideoManager::onNewSample(GstElement *sink, VideoManager *self) {
         gst_structure_get_int(structure, "height", &height);
 
         GstMapInfo map;
-        gst_buffer_map(buffer, &map, GST_MAP_READ);
+        gst_buffer_map(buffer, &map, GST_MAP_READ); //
 
         // Creating our QImage from raw data coming from GStreamer
         // RGB888 corresponds to video/x-raw, format=RGB which we requested in pipeline

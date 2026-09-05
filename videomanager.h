@@ -55,6 +55,7 @@ private:
     void cleanupPipeline();
 
     // GStreamer callback which runs when we have a new frame
+    // ACHTUNG! this should be static
     static GstFlowReturn onNewSample(GstElement *sink, VideoManager *self);
 };
 

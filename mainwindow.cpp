@@ -28,9 +28,10 @@ MainWindow::MainWindow(QWidget *parent)
     }
 
     videoManager = new VideoManager(ui->gstVideoWidget, this);
-    videoManager->setUrlSource("https://gstreamer.freedesktop.org/data/media/sintel_trailer-480p.webm");
+    //videoManager->setUrlSource("https://gstreamer.freedesktop.org/data/media/sintel_trailer-480p.webm");
+    //videoManager->setUrlSource("");
     // alternative for drone e.g. UDP h264 stream
-    // manager->setCustomPipeline("udpsrc port=5600 ! application/x-rtp ! rtph264depay ! avdec_h264 ! videoconvert ! video/x-raw,format=RGB ! appsink name=mysink emit-signals=true drop=true max-buffers=1");
+    videoManager->setCustomPipeline("udpsrc port=5000 caps=\"application/x-rtp,media=video,encoding-name=H264,payload=96\" ! rtpjitterbuffer latency=200 ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! video/x-raw,format=RGB ! appsink name=mysink emit-signals=true drop=true max-buffers=1");
 
 }
 

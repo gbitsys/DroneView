@@ -23,7 +23,9 @@ protected:
         // in case of different aspect ratio there is no distortion in the image (letterboxing)
 
         if (!currentFrame.isNull()) {
-            QImage scaledImage = currentFrame.scaled(size(), Qt::KeepAspectRatio, Qt::SmoothTransformation); // scaling while keeping ratio
+            QImage scaledImage = currentFrame.scaled(size(), Qt::KeepAspectRatio, Qt::SmoothTransformation);
+            // Qt::KeepAspectRatio scaling while keeping ratio
+            // Qt::SmoothTransformation anti-aliasing
             int x = (width() - scaledImage.width()) / 2; // for centering the image at x axis
             int y = (height() - scaledImage.height()) / 2; // for centering the image at y axis
             painter.drawImage(x, y, scaledImage);
