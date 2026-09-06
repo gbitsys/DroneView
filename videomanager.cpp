@@ -67,6 +67,43 @@ void VideoManager::setWidthRes(int newWidthRes) { widthRes = newWidthRes; }
 
 bool VideoManager::getPlay() const { return isPlaying; }
 
+int VideoManager::getZoom() const { return zoom; }
+
+void VideoManager::setZoom(int newZoom) {
+    zoom = newZoom;
+
+    if (!pipeline) return;
+
+    // Should have this element in pipeline for zoom slider to function
+    GstElement *cropper = gst_bin_get_by_name(GST_BIN(pipeline), "cropper");
+    if (!cropper) {
+        qWarning() << "'cropper' element not found in pipeline!";
+        return;
+    }
+
+    // zoom: 100 = no zoom , 200 = 2x
+    if (widthRes <= 0 || heightRes <= 0) {
+        qWarning() << "Width/Height resolution not set, cannot compute zoom crop!";
+        gst_object_unref(cropper);
+        return;
+    }
+
+    double factor = 1.0 - (100.0 / newZoom); // e.g. 200% -> 0.5
+    int cropLeftRight = static_cast<int>(widthRes * factor / 2.0);
+    int cropTopBottom = static_cast<int>(heightRes * factor / 2.0);
+
+    g_object_set(cropper,
+                 "left", cropLeftRight,
+                 "right", cropLeftRight,
+                 "top", cropTopBottom,
+                 "bottom", cropTopBottom,
+                 NULL);
+
+    gst_object_unref(cropper);
+
+    qDebug() << "Zoom is now set to:" << newZoom << "% (crop L/R:" << cropLeftRight << "T/B:" << cropTopBottom << ")";
+}
+
 void VideoManager::setPlay(bool newPlay) {
     if (isPlaying == newPlay || !pipeline) return;
 
@@ -99,6 +136,12 @@ GstFlowReturn VideoManager::onNewSample(GstElement *sink, VideoManager *self) {
         int width, height;
         gst_structure_get_int(structure, "width", &width);
         gst_structure_get_int(structure, "height", &height);
+
+        // Update resolution members
+        if (self->widthRes != width || self->heightRes != height) {
+            self->widthRes = width;
+            self->heightRes = height;
+        }
 
         GstMapInfo map;
         gst_buffer_map(buffer, &map, GST_MAP_READ); //

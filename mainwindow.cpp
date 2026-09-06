@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->playButton, &QPushButton::clicked, this, &MainWindow::playStream);
     connect(ui->stopButton, &QPushButton::clicked, this, &MainWindow::stopStream);
     connect(ui->resolutionButton, &QPushButton::clicked, this, &MainWindow::setupResolutionMenu);
+    connect(ui->zoomSlider_2, &QSlider::valueChanged, this, &MainWindow::onZoomChanged);
 
     // welcome page image
     QString defaultImage = QCoreApplication::applicationDirPath() + "/wait_image.jpg";
@@ -31,7 +32,13 @@ MainWindow::MainWindow(QWidget *parent)
     //videoManager->setUrlSource("https://gstreamer.freedesktop.org/data/media/sintel_trailer-480p.webm");
     //videoManager->setUrlSource("");
     // alternative for drone e.g. UDP h264 stream
-    videoManager->setCustomPipeline("udpsrc port=5000 caps=\"application/x-rtp,media=video,encoding-name=H264,payload=96\" ! rtpjitterbuffer latency=200 ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! video/x-raw,format=RGB ! appsink name=mysink emit-signals=true drop=true max-buffers=1");
+    //videoManager->setCustomPipeline("udpsrc port=5000 caps=\"application/x-rtp,media=video,encoding-name=H264,payload=96\" ! rtpjitterbuffer latency=200 ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! video/x-raw,format=RGB ! appsink name=mysink emit-signals=true drop=true max-buffers=1");
+    videoManager->setCustomPipeline(
+        "udpsrc port=5000 caps=\"application/x-rtp,media=video,encoding-name=H264,payload=96\" ! "
+        "rtpjitterbuffer latency=200 ! rtph264depay ! h264parse ! avdec_h264 ! "
+        "videoconvert ! videocrop name=cropper ! videoscale ! "
+        "video/x-raw,format=RGB ! appsink name=mysink emit-signals=true drop=true max-buffers=1"
+        ); // videocrop for zoom
 
 }
 
@@ -58,7 +65,14 @@ void MainWindow::stopStream(){
     videoManager->setPlay(false);
 }
 
+void MainWindow::onZoomChanged(int value)
+{
+    videoManager->setZoom(value+100);
+    qDebug() << "Zoom is now set to: " << value;
+}
+
 void MainWindow::setupResolutionMenu() {
+    // Requires communication with sender
     qDebug() << "Resolution";
     QMenu menu(this);
 

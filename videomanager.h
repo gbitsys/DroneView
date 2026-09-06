@@ -38,6 +38,9 @@ public:
     bool getPlay() const;
     void setPlay(bool newPlay);
 
+    int getZoom() const;
+    void setZoom(int newZoom);
+
 signals:
     // Signal that transfers frames to widget
     void newFrameAvailable(const QImage &frame);
@@ -47,6 +50,7 @@ private:
     QString urlSource;
     int heightRes;
     int widthRes;
+    int zoom;
 
     GstVideoWidget *videoWidget;
 

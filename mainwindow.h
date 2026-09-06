@@ -29,6 +29,9 @@ public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow() override;
 
+private slots:
+    void onZoomChanged(int value);
+
 private:
     void quit(); // quit action button (menu)
     void playStream(); // play button for streaming
