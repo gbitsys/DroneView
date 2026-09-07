@@ -37,6 +37,8 @@ private:
     void playStream(); // play button for streaming
     void setupResolutionMenu();
     void stopStream();
+    void settingsMenu();
+    void backPushButton(); // from settings menu back to main
     Ui::MainWindow *ui;
     QString m_currentResolution = "Auto";
     VideoManager *videoManager;

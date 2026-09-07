@@ -16,7 +16,6 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QRadioButton>
@@ -24,6 +23,7 @@
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 #include "aspectratiolabel.h"
@@ -71,9 +71,10 @@ public:
     QRadioButton *Stream3;
     QSpacerItem *horizontalSpacer_6;
     QWidget *settingsScreen;
+    QTextEdit *textEdit;
+    QPushButton *pushButton;
+    QPushButton *backButton;
     QMenuBar *menubar;
-    QMenu *menuFile;
-    QMenu *menuStream;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -278,6 +279,15 @@ public:
         stackedWidget->addWidget(streamScreen);
         settingsScreen = new QWidget();
         settingsScreen->setObjectName("settingsScreen");
+        textEdit = new QTextEdit(settingsScreen);
+        textEdit->setObjectName("textEdit");
+        textEdit->setGeometry(QRect(50, 60, 261, 31));
+        pushButton = new QPushButton(settingsScreen);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(330, 60, 94, 26));
+        backButton = new QPushButton(settingsScreen);
+        backButton->setObjectName("backButton");
+        backButton->setGeometry(QRect(620, 510, 94, 26));
         stackedWidget->addWidget(settingsScreen);
 
         horizontalLayout_4->addWidget(stackedWidget);
@@ -287,27 +297,14 @@ public:
         menubar->setObjectName("menubar");
         menubar->setGeometry(QRect(0, 0, 743, 23));
         menubar->setLayoutDirection(Qt::LayoutDirection::LeftToRight);
-        menuFile = new QMenu(menubar);
-        menuFile->setObjectName("menuFile");
-        menuFile->setLayoutDirection(Qt::LayoutDirection::LeftToRight);
-        menuStream = new QMenu(menubar);
-        menuStream->setObjectName("menuStream");
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
         MainWindow->setStatusBar(statusbar);
 
-        menubar->addAction(menuFile->menuAction());
-        menubar->addAction(menuStream->menuAction());
-        menuFile->addAction(actionSave);
-        menuFile->addAction(actionLoad);
-        menuFile->addSeparator();
-        menuFile->addAction(actionQuit);
-        menuStream->addAction(actionSet_Url);
-
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(1);
+        stackedWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -331,8 +328,8 @@ public:
         stream1Button->setText(QCoreApplication::translate("MainWindow", "Stream 1", nullptr));
         stream2Button->setText(QCoreApplication::translate("MainWindow", "Stream 2", nullptr));
         Stream3->setText(QCoreApplication::translate("MainWindow", "Stream 3", nullptr));
-        menuFile->setTitle(QCoreApplication::translate("MainWindow", "&File", nullptr));
-        menuStream->setTitle(QCoreApplication::translate("MainWindow", "Stream", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
+        backButton->setText(QCoreApplication::translate("MainWindow", "Back", nullptr));
     } // retranslateUi
 
 };

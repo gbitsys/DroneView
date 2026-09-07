@@ -23,6 +23,9 @@
 			"find_dependency",
 			"_qt_internal_find_third_party_dependencies",
 			"_qt_internal_find_qt_dependencies",
+			"_pkg_create_imp_target",
+			"_pkg_recalculate",
+			"pkg_check_modules",
 			"add_compile_definitions",
 			"project",
 			"target_include_directories"
@@ -48,6 +51,7 @@
 			"/home/giorgos/Qt/6.11.1/gcc_64/lib/cmake/Qt6Multimedia/Qt6MultimediaTargets.cmake",
 			"/home/giorgos/Qt/6.11.1/gcc_64/lib/cmake/Qt6Multimedia/Qt6MultimediaConfig.cmake",
 			"/home/giorgos/Qt/6.11.1/gcc_64/lib/cmake/Qt6MultimediaWidgets/Qt6MultimediaWidgetsDependencies.cmake",
+			"/home/giorgos/Qt/Tools/CMake/share/cmake-3.30/Modules/FindPkgConfig.cmake",
 			"build/Desktop_Qt_6_11_1-Debug/.qtcreator/cmake-helper/qtcreator-project.cmake"
 		],
 		"nodes" : 
@@ -82,7 +86,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 88,
+				"line" : 89,
 				"parent" : 0
 			},
 			{
@@ -340,25 +344,49 @@
 				"parent" : 2
 			},
 			{
-				"command" : 14,
+				"command" : 15,
 				"file" : 1,
-				"line" : 3,
+				"line" : 18,
 				"parent" : 0
 			},
 			{
+				"command" : 14,
 				"file" : 19,
+				"line" : 881,
 				"parent" : 53
 			},
 			{
 				"command" : 13,
 				"file" : 19,
-				"line" : 81,
+				"line" : 365,
 				"parent" : 54
 			},
 			{
-				"command" : 15,
+				"command" : 9,
+				"file" : 19,
+				"line" : 346,
+				"parent" : 55
+			},
+			{
+				"command" : 17,
 				"file" : 1,
-				"line" : 66,
+				"line" : 3,
+				"parent" : 0
+			},
+			{
+				"file" : 20,
+				"parent" : 57
+			},
+			{
+				"command" : 16,
+				"file" : 20,
+				"line" : 81,
+				"parent" : 58
+			},
+			{
+				"command" : 18,
+				"file" : 1,
+				"line" : 67,
 				"parent" : 0
 			}
 		]
@@ -374,6 +402,10 @@
 				{
 					"backtrace" : 52,
 					"fragment" : "-fPIC"
+				},
+				{
+					"backtrace" : 6,
+					"fragment" : "-pthread"
 				}
 			],
 			"defines" : 
@@ -407,7 +439,7 @@
 					"define" : "QT_OPENGL_LIB"
 				},
 				{
-					"backtrace" : 55,
+					"backtrace" : 59,
 					"define" : "QT_QML_DEBUG"
 				},
 				{
@@ -422,23 +454,27 @@
 					"path" : "/home/giorgos/Documents/DroneView/build/Desktop_Qt_6_11_1-Debug/DroneView_autogen/include"
 				},
 				{
-					"backtrace" : 56,
+					"backtrace" : 60,
 					"path" : "/home/giorgos/Documents/DroneView"
 				},
 				{
-					"backtrace" : 56,
+					"backtrace" : 60,
+					"isSystem" : true,
 					"path" : "/usr/include/gstreamer-1.0"
 				},
 				{
-					"backtrace" : 56,
+					"backtrace" : 60,
+					"isSystem" : true,
 					"path" : "/usr/include/glib-2.0"
 				},
 				{
-					"backtrace" : 56,
+					"backtrace" : 60,
+					"isSystem" : true,
 					"path" : "/usr/lib/x86_64-linux-gnu/glib-2.0/include"
 				},
 				{
-					"backtrace" : 56,
+					"backtrace" : 60,
+					"isSystem" : true,
 					"path" : "/usr/include/orc-0.4"
 				},
 				{
@@ -601,6 +637,31 @@
 			{
 				"backtrace" : 52,
 				"fragment" : "/home/giorgos/Qt/6.11.1/gcc_64/lib/libQt6Core.so.6.11.1",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 56,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libgstvideo-1.0.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 56,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libgstbase-1.0.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 56,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libgstreamer-1.0.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 56,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libgobject-2.0.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 56,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libglib-2.0.so",
 				"role" : "libraries"
 			},
 			{

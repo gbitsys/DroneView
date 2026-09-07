@@ -39,7 +39,7 @@
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="waitScreen">
        <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -317,7 +317,44 @@
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="settingsScreen"/>
+      <widget class="QWidget" name="settingsScreen">
+       <widget class="QTextEdit" name="textEdit">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>60</y>
+          <width>261</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>60</y>
+          <width>94</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PushButton</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="backButton">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>510</y>
+          <width>94</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+      </widget>
      </widget>
     </item>
    </layout>
@@ -334,26 +371,6 @@
    <property name="layoutDirection">
     <enum>Qt::LayoutDirection::LeftToRight</enum>
    </property>
-   <widget class="QMenu" name="menuFile">
-    <property name="layoutDirection">
-     <enum>Qt::LayoutDirection::LeftToRight</enum>
-    </property>
-    <property name="title">
-     <string>&amp;File</string>
-    </property>
-    <addaction name="actionSave"/>
-    <addaction name="actionLoad"/>
-    <addaction name="separator"/>
-    <addaction name="actionQuit"/>
-   </widget>
-   <widget class="QMenu" name="menuStream">
-    <property name="title">
-     <string>Stream</string>
-    </property>
-    <addaction name="actionSet_Url"/>
-   </widget>
-   <addaction name="menuFile"/>
-   <addaction name="menuStream"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionSave">

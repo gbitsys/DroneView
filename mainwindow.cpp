@@ -8,9 +8,10 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     ui->stackedWidget->setCurrentIndex(0);
 
-    connect(ui->actionQuit, &QAction::triggered, this, &MainWindow::quit);
     connect(ui->playButton, &QPushButton::clicked, this, &MainWindow::playStream);
     connect(ui->stopButton, &QPushButton::clicked, this, &MainWindow::stopStream);
+    connect(ui->settingsButton, &QPushButton::clicked, this, &MainWindow::settingsMenu);
+    connect(ui->backButton, &QPushButton::clicked, this, &MainWindow::backPushButton);
     connect(ui->resolutionButton, &QPushButton::clicked, this, &MainWindow::setupResolutionMenu);
     connect(ui->zoomSlider_2, &QSlider::valueChanged, this, &MainWindow::onZoomChanged);
 
@@ -33,6 +34,7 @@ MainWindow::MainWindow(QWidget *parent)
     //videoManager->setUrlSource("");
     // alternative for drone e.g. UDP h264 stream
     //videoManager->setCustomPipeline("udpsrc port=5000 caps=\"application/x-rtp,media=video,encoding-name=H264,payload=96\" ! rtpjitterbuffer latency=200 ! rtph264depay ! h264parse ! avdec_h264 ! videoconvert ! video/x-raw,format=RGB ! appsink name=mysink emit-signals=true drop=true max-buffers=1");
+
     videoManager->setCustomPipeline(
         "udpsrc port=5000 caps=\"application/x-rtp,media=video,encoding-name=H264,payload=96\" ! "
         "rtpjitterbuffer latency=200 ! rtph264depay ! h264parse ! avdec_h264 ! "
@@ -69,6 +71,16 @@ void MainWindow::onZoomChanged(int value)
 {
     videoManager->setZoom(value+100);
     qDebug() << "Zoom is now set to: " << value;
+}
+
+void MainWindow::settingsMenu()
+{
+    ui->stackedWidget->setCurrentIndex(2);
+}
+
+void MainWindow::backPushButton()
+{
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 void MainWindow::setupResolutionMenu() {
