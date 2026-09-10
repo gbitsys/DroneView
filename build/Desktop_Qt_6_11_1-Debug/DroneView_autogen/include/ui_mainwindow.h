@@ -13,6 +13,7 @@
 #include <QtGui/QAction>
 #include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
@@ -23,7 +24,6 @@
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QStatusBar>
-#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 #include "aspectratiolabel.h"
@@ -68,12 +68,19 @@ public:
     QSpacerItem *horizontalSpacer_5;
     QRadioButton *stream1Button;
     QRadioButton *stream2Button;
-    QRadioButton *Stream3;
+    QRadioButton *stream3Button;
     QSpacerItem *horizontalSpacer_6;
     QWidget *settingsScreen;
-    QTextEdit *textEdit;
-    QPushButton *pushButton;
+    QVBoxLayout *verticalLayout_6;
+    QHBoxLayout *horizontalLayout_2;
+    QSpacerItem *horizontalSpacer_7;
     QPushButton *backButton;
+    QPushButton *pushButton;
+    QVBoxLayout *verticalLayout;
+    QComboBox *codecComboBox;
+    QComboBox *protocolComboBox;
+    QComboBox *bitrateComboBox;
+    QSpacerItem *verticalSpacer;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -256,6 +263,7 @@ public:
 
         stream1Button = new QRadioButton(streamScreen);
         stream1Button->setObjectName("stream1Button");
+        stream1Button->setChecked(true);
 
         horizontalLayout_3->addWidget(stream1Button);
 
@@ -264,10 +272,10 @@ public:
 
         horizontalLayout_3->addWidget(stream2Button);
 
-        Stream3 = new QRadioButton(streamScreen);
-        Stream3->setObjectName("Stream3");
+        stream3Button = new QRadioButton(streamScreen);
+        stream3Button->setObjectName("stream3Button");
 
-        horizontalLayout_3->addWidget(Stream3);
+        horizontalLayout_3->addWidget(stream3Button);
 
         horizontalSpacer_6 = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
 
@@ -279,15 +287,78 @@ public:
         stackedWidget->addWidget(streamScreen);
         settingsScreen = new QWidget();
         settingsScreen->setObjectName("settingsScreen");
-        textEdit = new QTextEdit(settingsScreen);
-        textEdit->setObjectName("textEdit");
-        textEdit->setGeometry(QRect(50, 60, 261, 31));
-        pushButton = new QPushButton(settingsScreen);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(330, 60, 94, 26));
+        verticalLayout_6 = new QVBoxLayout(settingsScreen);
+        verticalLayout_6->setObjectName("verticalLayout_6");
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setObjectName("horizontalLayout_2");
+        horizontalSpacer_7 = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
+
+        horizontalLayout_2->addItem(horizontalSpacer_7);
+
         backButton = new QPushButton(settingsScreen);
         backButton->setObjectName("backButton");
-        backButton->setGeometry(QRect(620, 510, 94, 26));
+        QIcon icon6(QIcon::fromTheme(QIcon::ThemeIcon::GoPrevious));
+        backButton->setIcon(icon6);
+
+        horizontalLayout_2->addWidget(backButton);
+
+        pushButton = new QPushButton(settingsScreen);
+        pushButton->setObjectName("pushButton");
+        QIcon icon7(QIcon::fromTheme(QIcon::ThemeIcon::HelpAbout));
+        pushButton->setIcon(icon7);
+
+        horizontalLayout_2->addWidget(pushButton);
+
+
+        verticalLayout_6->addLayout(horizontalLayout_2);
+
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setObjectName("verticalLayout");
+        codecComboBox = new QComboBox(settingsScreen);
+        codecComboBox->addItem(QString());
+        codecComboBox->addItem(QString());
+        codecComboBox->addItem(QString());
+        codecComboBox->addItem(QString());
+        codecComboBox->setObjectName("codecComboBox");
+        codecComboBox->setEnabled(true);
+        sizePolicy2.setHeightForWidth(codecComboBox->sizePolicy().hasHeightForWidth());
+        codecComboBox->setSizePolicy(sizePolicy2);
+        codecComboBox->setMaximumSize(QSize(150, 16777215));
+        codecComboBox->setInsertPolicy(QComboBox::InsertPolicy::NoInsert);
+
+        verticalLayout->addWidget(codecComboBox);
+
+        protocolComboBox = new QComboBox(settingsScreen);
+        protocolComboBox->addItem(QString());
+        protocolComboBox->setObjectName("protocolComboBox");
+        QSizePolicy sizePolicy4(QSizePolicy::Policy::Maximum, QSizePolicy::Policy::Fixed);
+        sizePolicy4.setHorizontalStretch(0);
+        sizePolicy4.setVerticalStretch(0);
+        sizePolicy4.setHeightForWidth(protocolComboBox->sizePolicy().hasHeightForWidth());
+        protocolComboBox->setSizePolicy(sizePolicy4);
+        protocolComboBox->setMaximumSize(QSize(150, 16777215));
+
+        verticalLayout->addWidget(protocolComboBox);
+
+        bitrateComboBox = new QComboBox(settingsScreen);
+        bitrateComboBox->addItem(QString());
+        bitrateComboBox->addItem(QString());
+        bitrateComboBox->addItem(QString());
+        bitrateComboBox->addItem(QString());
+        bitrateComboBox->setObjectName("bitrateComboBox");
+        sizePolicy4.setHeightForWidth(bitrateComboBox->sizePolicy().hasHeightForWidth());
+        bitrateComboBox->setSizePolicy(sizePolicy4);
+        bitrateComboBox->setMaximumSize(QSize(150, 16777215));
+
+        verticalLayout->addWidget(bitrateComboBox);
+
+        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
+
+        verticalLayout->addItem(verticalSpacer);
+
+
+        verticalLayout_6->addLayout(verticalLayout);
+
         stackedWidget->addWidget(settingsScreen);
 
         horizontalLayout_4->addWidget(stackedWidget);
@@ -304,7 +375,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(2);
+        stackedWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -327,9 +398,21 @@ public:
         zoomLabel_2->setText(QCoreApplication::translate("MainWindow", "Zoom", nullptr));
         stream1Button->setText(QCoreApplication::translate("MainWindow", "Stream 1", nullptr));
         stream2Button->setText(QCoreApplication::translate("MainWindow", "Stream 2", nullptr));
-        Stream3->setText(QCoreApplication::translate("MainWindow", "Stream 3", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
-        backButton->setText(QCoreApplication::translate("MainWindow", "Back", nullptr));
+        stream3Button->setText(QCoreApplication::translate("MainWindow", "Stream 3", nullptr));
+        backButton->setText(QString());
+        pushButton->setText(QString());
+        codecComboBox->setItemText(0, QCoreApplication::translate("MainWindow", "Select Codec ...", nullptr));
+        codecComboBox->setItemText(1, QCoreApplication::translate("MainWindow", "H264 (software)", nullptr));
+        codecComboBox->setItemText(2, QCoreApplication::translate("MainWindow", "H264 (hardware)", nullptr));
+        codecComboBox->setItemText(3, QCoreApplication::translate("MainWindow", "H265", nullptr));
+
+        protocolComboBox->setItemText(0, QCoreApplication::translate("MainWindow", "Select Protocol ...", nullptr));
+
+        bitrateComboBox->setItemText(0, QCoreApplication::translate("MainWindow", "Select Bitrate ...", nullptr));
+        bitrateComboBox->setItemText(1, QCoreApplication::translate("MainWindow", "Constant (CBR)", nullptr));
+        bitrateComboBox->setItemText(2, QCoreApplication::translate("MainWindow", "Variable   (VBR)", nullptr));
+        bitrateComboBox->setItemText(3, QCoreApplication::translate("MainWindow", "Constraint VBR", nullptr));
+
     } // retranslateUi
 
 };

@@ -2,4 +2,5 @@
 #include "EWIEGA46WW/moc_aspectratiolabel.cpp"
 #include "EWIEGA46WW/moc_gstvideowidget.cpp"
 #include "EWIEGA46WW/moc_mainwindow.cpp"
+#include "EWIEGA46WW/moc_networkmanager.cpp"
 #include "EWIEGA46WW/moc_videomanager.cpp"

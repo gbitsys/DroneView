@@ -679,6 +679,12 @@
 			null
 		],
 		[
+			"/home/giorgos/Documents/DroneView/networkmanager.h",
+			"MU",
+			"EWIEGA46WW/moc_networkmanager.cpp",
+			null
+		],
+		[
 			"/home/giorgos/Documents/DroneView/videomanager.h",
 			"MU",
 			"EWIEGA46WW/moc_videomanager.cpp",
@@ -768,6 +774,7 @@
 		[ "/home/giorgos/Documents/DroneView/aspectratiolabel.cpp", "MU", null ],
 		[ "/home/giorgos/Documents/DroneView/main.cpp", "MU", null ],
 		[ "/home/giorgos/Documents/DroneView/mainwindow.cpp", "MU", null ],
+		[ "/home/giorgos/Documents/DroneView/networkmanager.cpp", "MU", null ],
 		[ "/home/giorgos/Documents/DroneView/videomanager.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

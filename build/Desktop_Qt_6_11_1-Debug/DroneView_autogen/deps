@@ -12,6 +12,8 @@ DroneView_autogen/timestamp: \
 	/home/giorgos/Documents/DroneView/main.cpp \
 	/home/giorgos/Documents/DroneView/mainwindow.cpp \
 	/home/giorgos/Documents/DroneView/mainwindow.h \
+	/home/giorgos/Documents/DroneView/networkmanager.cpp \
+	/home/giorgos/Documents/DroneView/networkmanager.h \
 	/home/giorgos/Documents/DroneView/videomanager.cpp \
 	/home/giorgos/Documents/DroneView/videomanager.h \
 	/home/giorgos/Qt/6.11.1/gcc_64/include/QtCore/QCoreApplication \
