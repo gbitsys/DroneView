@@ -1,0 +1,39 @@
+# Build directory
+build/
+
+# Qt Creator
+.qtc_clangd/
+*.user
+*.user.*
+*.pro.user
+*.pro.user.*
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+CTestTestfile.cmake
+_testing/
+
+# Generated files
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.a
+*.lib
+
+# Qt generated files
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
