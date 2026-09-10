@@ -1,9 +1,0 @@
-/home/giorgos/Documents/DroneView/build/Desktop_Qt_6_11_1-Debug/CMakeFiles/DroneView.dir
-/home/giorgos/Documents/DroneView/build/Desktop_Qt_6_11_1-Debug/CMakeFiles/edit_cache.dir
-/home/giorgos/Documents/DroneView/build/Desktop_Qt_6_11_1-Debug/CMakeFiles/rebuild_cache.dir
-/home/giorgos/Documents/DroneView/build/Desktop_Qt_6_11_1-Debug/CMakeFiles/list_install_components.dir
-/home/giorgos/Documents/DroneView/build/Desktop_Qt_6_11_1-Debug/CMakeFiles/install.dir
-/home/giorgos/Documents/DroneView/build/Desktop_Qt_6_11_1-Debug/CMakeFiles/install/local.dir
-/home/giorgos/Documents/DroneView/build/Desktop_Qt_6_11_1-Debug/CMakeFiles/install/strip.dir
-/home/giorgos/Documents/DroneView/build/Desktop_Qt_6_11_1-Debug/CMakeFiles/DroneView_autogen_timestamp_deps.dir
-/home/giorgos/Documents/DroneView/build/Desktop_Qt_6_11_1-Debug/CMakeFiles/DroneView_autogen.dir

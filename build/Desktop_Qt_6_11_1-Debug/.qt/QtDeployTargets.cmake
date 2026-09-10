@@ -1,2 +1,0 @@
-set(__QT_DEPLOY_TARGET_DroneView_FILE /home/giorgos/Documents/DroneView/build/Desktop_Qt_6_11_1-Debug/DroneView)
-set(__QT_DEPLOY_TARGET_DroneView_TYPE EXECUTABLE)
