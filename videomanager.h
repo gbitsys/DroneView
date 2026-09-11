@@ -28,6 +28,7 @@ public:
 
     // for dynamic pipelines
     void setCustomPipeline(const QString &pipelineString);
+    QString menuPipelineBuild(const QString codec, const QString protocol, const QString bitrate);
 
     int getHeightRes() const;
     void setHeightRes(int newHeightRes);

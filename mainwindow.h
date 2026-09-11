@@ -31,14 +31,15 @@ public:
 
 private slots:
     void onZoomChanged(int value);
-
-private:
-    void quit(); // quit action button (menu)
     void playStream(); // play button for streaming
     void setupResolutionMenu();
     void stopStream();
     void settingsMenu();
     void backPushButton(); // from settings menu back to main
+    // acts as a save button too
+
+private:
+
     Ui::MainWindow *ui;
     QString m_currentResolution = "Auto";
     VideoManager *videoManager;

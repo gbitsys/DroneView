@@ -39,7 +39,7 @@
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="waitScreen">
        <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -388,17 +388,64 @@
             </item>
             <item>
              <property name="text">
-              <string>H264 (software)</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>H264 (hardware)</string>
+              <string>H264 </string>
              </property>
             </item>
             <item>
              <property name="text">
               <string>H265</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>VP8</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>VP9</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="decodingTypeCB">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>191</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <item>
+             <property name="text">
+              <string>Select Decoding Type ...</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="encodingTypeCB">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>191</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <item>
+             <property name="text">
+              <string>Select Encoding Type ... </string>
              </property>
             </item>
            </widget>
@@ -420,6 +467,21 @@
             <item>
              <property name="text">
               <string>Select Protocol ...</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>UDP</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>RTP</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>RTSP</string>
              </property>
             </item>
            </widget>
@@ -458,6 +520,25 @@
               <string>Constraint VBR</string>
              </property>
             </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="ipReceiver">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>191</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="placeholderText">
+             <string>192.168.1.1 receiver's IP</string>
+            </property>
            </widget>
           </item>
           <item>

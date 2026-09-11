@@ -59,6 +59,43 @@ void VideoManager::setCustomPipeline(const QString &pipelineString) {
     }
 }
 
+
+QString VideoManager::menuPipelineBuild(const QString codec, const QString protocol, const QString bitrate) {
+    // building pipeline from user settings menu
+    QString networkSourceBlock = "";
+    if (protocol == "RTSP") {
+        networkSourceBlock = "rtspsrc location=rtsp://<KHADAS_IP>:5000/live ! rtph264depay";
+    } else { // UDP / RTP (Standard για FPV)
+        QString encodingName = codec.contains("H265") ? "H265" : "H264";
+        int payload = 96;
+        networkSourceBlock = QString("udpsrc port=5000 caps=\"application/x-rtp,media=video,clock-rate=90000,encoding-name=%1,payload=%2\" ! "
+                                     "rtpjitterbuffer latency=50 ! rtph264depay")
+                                 .arg(encodingName)
+                                 .arg(payload);
+    }
+
+    QString decoderBlock = "";
+    if (codec == "H265") {
+        decoderBlock = "h265parse ! avdec_h265";
+    }
+    else if (codec.contains("hardware") || codec.contains("software")) {
+        decoderBlock = "h264parse ! avdec_h264";
+    }
+    else {
+        decoderBlock = "h264parse ! avdec_h264";
+    }
+
+    QString sinkBlock = "videoconvert ! video/x-raw,format=RGB ! appsink name=mysink emit-signals=true drop=true max-buffers=1 sync=false";
+
+    // assemblying the receiver pipeline
+    QString finalReceiverPipeline = QString("%1 ! %2 ! %3")
+                                        .arg(networkSourceBlock)
+                                        .arg(decoderBlock)
+                                        .arg(sinkBlock);
+
+    return finalReceiverPipeline;
+}
+
 int VideoManager::getHeightRes() const { return heightRes; }
 void VideoManager::setHeightRes(int newHeightRes) { heightRes = newHeightRes; }
 

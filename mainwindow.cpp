@@ -8,12 +8,25 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     ui->stackedWidget->setCurrentIndex(0);
 
+    //------- Connecting signals and slots --------------
     connect(ui->playButton, &QPushButton::clicked, this, &MainWindow::playStream);
     connect(ui->stopButton, &QPushButton::clicked, this, &MainWindow::stopStream);
     connect(ui->settingsButton, &QPushButton::clicked, this, &MainWindow::settingsMenu);
     connect(ui->backButton, &QPushButton::clicked, this, &MainWindow::backPushButton);
     connect(ui->resolutionButton, &QPushButton::clicked, this, &MainWindow::setupResolutionMenu);
     connect(ui->zoomSlider_2, &QSlider::valueChanged, this, &MainWindow::onZoomChanged);
+    //----------------------------------------------------
+
+    //------ IP receiver settingsScreen -------
+    // regex for ipv4 used in settings screen IP text edit
+    QRegularExpression ipRegex(
+        "^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}"
+        "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$"
+        );
+    QRegularExpressionValidator *ipValidator = new QRegularExpressionValidator(ipRegex, this);
+    ui->ipReceiver->setValidator(ipValidator);
+    //------------------------------------------
+
 
     // welcome page image
     QString defaultImage = QCoreApplication::applicationDirPath() + "/wait_image.jpg";
@@ -26,7 +39,7 @@ MainWindow::MainWindow(QWidget *parent)
         ui->imageLabel->setPixmap(QPixmap(defaultImage));
     } else {
         qDebug() << "Error: Image not found at" << defaultImage;
-        ui->imageLabel->setText("No Signal / Waiting for drone stream...");
+        ui->imageLabel->setText("Press start for streaming / Settings for more");
     }
 
     videoManager = new VideoManager(ui->gstVideoWidget, this);
@@ -58,11 +71,6 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::quit() {
-    qDebug() << "Quitting ...";
-    close();
-}
-
 void MainWindow::playStream() {
     qDebug() << "Start streaming ...";
     ui->stackedWidget->setCurrentIndex(1);
@@ -89,7 +97,25 @@ void MainWindow::settingsMenu()
 
 void MainWindow::backPushButton()
 {
+    // goes back to waiting screen
+    // also saves user settings
     ui->stackedWidget->setCurrentIndex(0);
+
+    QString codec = ui->codecComboBox->currentText();
+    QString transmissionProtocol = ui->protocolComboBox->currentText();
+    QString bitrateMode = ui->bitrateComboBox->currentText();
+
+
+
+    if (codec.startsWith("Select") || transmissionProtocol.startsWith("Select") || bitrateMode.startsWith("Select")) {
+        // invalid settings
+        return;
+    }
+    // 2. Φτιάχνουμε το νέο pipeline
+    // videoManager->menuPipelineBuild(codec, transmissionProtocol, bitrateMode);
+
+    // 3. Γυρίζουμε στην οθόνη του βίντεο (Stream Screen)
+    ui->stackedWidget->setCurrentWidget(ui->streamScreen);
 }
 
 void MainWindow::setupResolutionMenu() {
