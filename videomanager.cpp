@@ -65,7 +65,7 @@ QString VideoManager::menuPipelineBuild(const QString codec, const QString proto
     QString networkSourceBlock = "";
     if (protocol == "RTSP") {
         networkSourceBlock = "rtspsrc location=rtsp://<KHADAS_IP>:5000/live ! rtph264depay";
-    } else { // UDP / RTP (Standard για FPV)
+    } else { // UDP / RTP
         QString encodingName = codec.contains("H265") ? "H265" : "H264";
         int payload = 96;
         networkSourceBlock = QString("udpsrc port=5000 caps=\"application/x-rtp,media=video,clock-rate=90000,encoding-name=%1,payload=%2\" ! "
