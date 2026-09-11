@@ -55,12 +55,14 @@ MainWindow::MainWindow(QWidget *parent)
         "video/x-raw,format=RGB ! appsink name=mysink emit-signals=true drop=true max-buffers=1"
         ); // videocrop for zoom
     */
+    /*
     videoManager->setCustomPipeline(
         "udpsrc port=5000 caps=\"application/x-rtp,media=video,clock-rate=90000,encoding-name=H264,payload=96\" ! "
         "rtpjitterbuffer latency=50 ! rtph264depay ! h264parse ! avdec_h264 ! "
         "videoconvert ! videocrop name=cropper ! videoscale ! "
         "video/x-raw,format=RGB ! appsink name=mysink emit-signals=true drop=true max-buffers=1 sync=false"
         ); // this one worked with khadas
+    */
 
 }
 
@@ -148,6 +150,9 @@ void MainWindow::backPushButton()
     QString codec = ui->codecComboBox->currentText();
     QString transmissionProtocol = ui->protocolComboBox->currentText();
     QString bitrateMode = ui->bitrateComboBox->currentText();
+    QString decodingType = ui->decodingTypeCB->currentText();
+    QString encodingType = ui->encodingTypeCB->currentText();
+    QString receiverIp = ui->ipReceiver->text();
 
 
 
@@ -155,11 +160,8 @@ void MainWindow::backPushButton()
         // invalid settings
         return;
     }
-    // 2. Φτιάχνουμε το νέο pipeline
-    // videoManager->menuPipelineBuild(codec, transmissionProtocol, bitrateMode);
-
-    // 3. Γυρίζουμε στην οθόνη του βίντεο (Stream Screen)
-    ui->stackedWidget->setCurrentWidget(ui->streamScreen);
+    QString pipelineRecv = videoManager->menuPipelineBuild(codec, decodingType, transmissionProtocol, bitrateMode, receiverIp);
+    videoManager->setCustomPipeline(pipelineRecv);
 }
 
 //----------------------------------------------------

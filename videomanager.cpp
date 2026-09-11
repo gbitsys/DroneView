@@ -59,40 +59,58 @@ void VideoManager::setCustomPipeline(const QString &pipelineString) {
     }
 }
 
+QString VideoManager::menuPipelineBuild(const QString &codec, const QString &decodingType, const QString &protocol, const QString &bitrate, const QString &receiverIp) {
+    // 1. Καθορισμός depayloader και encoding name βάσει codec
+    QString depayloader = "rtph264depay";
+    QString encodingName = "H264";
+    if (codec.contains("H265")) {
+        depayloader = "rtph265depay";
+        encodingName = "H265";
+    } else if (codec.contains("VP8")) {
+        depayloader = "rtpvp8depay";
+        encodingName = "VP8";
+    } else if (codec.contains("VP9")) {
+        depayloader = "rtpvp9depay";
+        encodingName = "VP9";
+    }
 
-QString VideoManager::menuPipelineBuild(const QString codec, const QString protocol, const QString bitrate) {
-    // building pipeline from user settings menu
+    // 2. Network Source Block (Receiver)
     QString networkSourceBlock = "";
     if (protocol == "RTSP") {
-        networkSourceBlock = "rtspsrc location=rtsp://<KHADAS_IP>:5000/live ! rtph264depay";
+        networkSourceBlock = QString("rtspsrc location=rtsp://%1:5000/live latency=50 ! %2")
+        .arg(receiverIp.isEmpty() ? "127.0.0.1" : receiverIp)
+            .arg(depayloader);
     } else { // UDP / RTP
-        QString encodingName = codec.contains("H265") ? "H265" : "H264";
-        int payload = 96;
-        networkSourceBlock = QString("udpsrc port=5000 caps=\"application/x-rtp,media=video,clock-rate=90000,encoding-name=%1,payload=%2\" ! "
-                                     "rtpjitterbuffer latency=50 ! rtph264depay")
+        networkSourceBlock = QString("udpsrc port=5000 caps=\"application/x-rtp,media=video,clock-rate=90000,encoding-name=%1,payload=96\" ! "
+                                     "rtpjitterbuffer latency=50 ! %3")
                                  .arg(encodingName)
-                                 .arg(payload);
+                                 .arg(depayloader);
     }
 
+    // 3. Decoder Block (PC / Receiver - βάσει decodingType)
     QString decoderBlock = "";
-    if (codec == "H265") {
-        decoderBlock = "h265parse ! avdec_h265";
-    }
-    else if (codec.contains("hardware") || codec.contains("software")) {
-        decoderBlock = "h264parse ! avdec_h264";
-    }
-    else {
-        decoderBlock = "h264parse ! avdec_h264";
+    bool isHardwareDecode = (decodingType == "Hardware");
+
+    if (codec.contains("H265")) {
+        decoderBlock = isHardwareDecode ? "h265parse ! vaapidecodebin" : "h265parse ! avdec_h265";
+    } else if (codec.contains("VP8")) {
+        decoderBlock = isHardwareDecode ? "vaapidecodebin" : "vp8dec";
+    } else if (codec.contains("VP9")) {
+        decoderBlock = isHardwareDecode ? "vaapidecodebin" : "vp9dec";
+    } else { // H264
+        decoderBlock = isHardwareDecode ? "h264parse ! vaapidecodebin" : "h264parse ! avdec_h264";
     }
 
-    QString sinkBlock = "videoconvert ! video/x-raw,format=RGB ! appsink name=mysink emit-signals=true drop=true max-buffers=1 sync=false";
+    // 4. Sink Block με το videocrop
+    QString sinkBlock = "videocrop name=cropper ! videoconvert ! video/x-raw,format=RGB ! appsink name=mysink emit-signals=true drop=true max-buffers=1 sync=false";
 
-    // assemblying the receiver pipeline
+    // 5. Συναρμολόγηση
     QString finalReceiverPipeline = QString("%1 ! %2 ! %3")
                                         .arg(networkSourceBlock)
                                         .arg(decoderBlock)
                                         .arg(sinkBlock);
 
+    qDebug() << "Pipeline: " << finalReceiverPipeline;
     return finalReceiverPipeline;
 }
 
