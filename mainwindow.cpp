@@ -1,5 +1,8 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
+#include <QFileDialog>
+#include <QStandardPaths>
+#include <QDateTime>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -15,6 +18,8 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->backButton, &QPushButton::clicked, this, &MainWindow::backPushButton);
     connect(ui->resolutionButton, &QPushButton::clicked, this, &MainWindow::setupResolutionMenu);
     connect(ui->zoomSlider_2, &QSlider::valueChanged, this, &MainWindow::onZoomChanged);
+    connect(ui->screenshotButton, &QPushButton::clicked, this, &MainWindow::takeScreenshot);
+    connect(ui->recordButton, &QPushButton::clicked, this, &MainWindow::toggleRecording);
     //----------------------------------------------------
 
     //------- IP receiver settingsScreen -----------------
@@ -43,6 +48,10 @@ MainWindow::MainWindow(QWidget *parent)
     }
 
     videoManager = new VideoManager(ui->gstVideoWidget, this);
+
+    // Load default UDP/H264 stream automatically
+    QString defaultPipeline = videoManager->menuPipelineBuild(CodecType::H264, DecodingType::Software, ProtocolType::UDP, VideoManager::DEFAULT_IP);
+    videoManager->setCustomPipeline(defaultPipeline);
 }
 
 MainWindow::~MainWindow()
@@ -116,31 +125,83 @@ void MainWindow::setupResolutionMenu() {
     }
 
 }
+
+void MainWindow::takeScreenshot()
+{
+    QImage frame = ui->gstVideoWidget->getCurrentFrame();
+    if (frame.isNull()) {
+        qWarning() << "No available frame for saving!";
+        return;
+    }
+
+    QString defaultName = QStandardPaths::writableLocation(QStandardPaths::PicturesLocation) +
+                          "/DroneView_" + QDateTime::currentDateTime().toString("yyyyMMdd_HHmmss") + ".jpg";
+
+    QString fileName = QFileDialog::getSaveFileName(this, "Saving frame", defaultName, "Images (*.jpg *.png)");
+    if (!fileName.isEmpty()) {
+        frame.save(fileName);
+        qDebug() << "Screenshot saved:" << fileName;
+    }
+}
+
+void MainWindow::toggleRecording()
+{
+    if (!m_isRecording) {
+        QString defaultName = QStandardPaths::writableLocation(QStandardPaths::MoviesLocation) +
+                              "/DroneRecord_" + QDateTime::currentDateTime().toString("yyyyMMdd_HHmmss") + ".mkv";
+        QString fileName = QFileDialog::getSaveFileName(this, "Saving video", defaultName, "Video (*.mkv)");
+
+        if (!fileName.isEmpty()) {
+            m_isRecording = true;
+            ui->recordButton->setText("Stop Rec");
+            ui->recordButton->setStyleSheet("color: red;");
+            videoManager->setRecording(true, fileName);
+        }
+    } else {
+        m_isRecording = false;
+        ui->recordButton->setText("Record ");
+        ui->recordButton->setStyleSheet("");
+        videoManager->setRecording(false);
+    }
+}
 //----------------------------------------------------
 
 
 //------- settingsScreen controls  -----------------
 void MainWindow::backPushButton()
 {
-    // goes back to waiting screen
-    // also saves user settings
+    // Go back to waiting screen (Also saves user settings)
     ui->stackedWidget->setCurrentIndex(0);
 
-    QString codec = ui->codecComboBox->currentText();
-    QString transmissionProtocol = ui->protocolComboBox->currentText();
-    QString bitrateMode = ui->bitrateComboBox->currentText();
-    QString decodingType = ui->decodingTypeCB->currentText();
-    QString encodingType = ui->encodingTypeCB->currentText();
+    QString codecStr = ui->codecComboBox->currentText();
+    QString transmissionProtocolStr = ui->protocolComboBox->currentText();
+    QString decodingTypeStr = ui->decodingTypeCB->currentText();
     QString receiverIp = ui->ipReceiver->text();
 
-
-
-    if (codec.startsWith("Select") || transmissionProtocol.startsWith("Select") || bitrateMode.startsWith("Select")) {
-        // invalid settings
+    if (codecStr.startsWith("Select") || transmissionProtocolStr.startsWith("Select")) {
+        // Invalid settings, do not build pipeline
         return;
     }
-    QString pipelineRecv = videoManager->menuPipelineBuild(codec, decodingType, transmissionProtocol, bitrateMode, receiverIp);
+
+    // --- CONVERTING STRINGS TO ENUMS ---
+    CodecType codecEnum = CodecType::Unknown;
+    if (codecStr.contains("H264")) codecEnum = CodecType::H264;
+    else if (codecStr.contains("H265")) codecEnum = CodecType::H265;
+    else if (codecStr.contains("VP8")) codecEnum = CodecType::VP8;
+    else if (codecStr.contains("VP9")) codecEnum = CodecType::VP9;
+
+    DecodingType decodingEnum = DecodingType::Unknown;
+    if (decodingTypeStr == "Hardware") decodingEnum = DecodingType::Hardware;
+    else if (decodingTypeStr == "Software") decodingEnum = DecodingType::Software;
+
+    ProtocolType protocolEnum = ProtocolType::Unknown;
+    if (transmissionProtocolStr == "UDP") protocolEnum = ProtocolType::UDP;
+    else if (transmissionProtocolStr == "RTP") protocolEnum = ProtocolType::RTP;
+    else if (transmissionProtocolStr == "RTSP") protocolEnum = ProtocolType::RTSP;
+    // -----------------------------------
+
+    // Build and set the new pipeline
+    QString pipelineRecv = videoManager->menuPipelineBuild(codecEnum, decodingEnum, protocolEnum, receiverIp);
     videoManager->setCustomPipeline(pipelineRecv);
 }
-
 //----------------------------------------------------

@@ -167,9 +167,6 @@
               <property name="text">
                <string>Stop </string>
               </property>
-              <property name="icon">
-               <iconset theme="QIcon::ThemeIcon::MediaPlaybackStop"/>
-              </property>
              </widget>
             </item>
             <item>
@@ -181,7 +178,8 @@
                <string>Record </string>
               </property>
               <property name="icon">
-               <iconset theme="QIcon::ThemeIcon::MediaRecord"/>
+               <iconset>
+                <normaloff>icons/Gnome-media-record.svg.webp</normaloff>icons/Gnome-media-record.svg.webp</iconset>
               </property>
              </widget>
             </item>
@@ -446,37 +444,6 @@
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="encodingTypeCB">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>191</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <item>
-             <property name="text">
-              <string>Select Encoding Type ... </string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Software</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Hardware</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item>
            <widget class="QComboBox" name="protocolComboBox">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
@@ -513,42 +480,6 @@
            </widget>
           </item>
           <item>
-           <widget class="QComboBox" name="bitrateComboBox">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>150</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <item>
-             <property name="text">
-              <string>Select Bitrate ...</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Constant (CBR)</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Variable   (VBR)</string>
-             </property>
-            </item>
-            <item>
-             <property name="text">
-              <string>Constraint VBR</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item>
            <widget class="QLineEdit" name="ipReceiver">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
@@ -564,25 +495,6 @@
             </property>
             <property name="placeholderText">
              <string>192.168.1.1 receiver's IP</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QLineEdit" name="ipSender">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>191</width>
-              <height>16777215</height>
-             </size>
-            </property>
-            <property name="placeholderText">
-             <string>0.0.0.0 sender's IP</string>
             </property>
            </widget>
           </item>

@@ -4,13 +4,11 @@
 #include <QMainWindow>
 
 #include <QStackedWidget>
-#include <QMediaPlayer>
-#include <QAudioOutput>
 #include <QUrl>
 #include <QDebug>
 #include <QCoreApplication>
 #include <QDir>
-#include <QFileInfo> // Απαραίτητο για τον έλεγχο ύπαρξης του αρχείου
+//#include <QFileInfo>
 #include <QMenu>
 #include <QActionGroup>
 #include "videomanager.h"
@@ -37,11 +35,14 @@ private slots:
     void settingsMenu();
     void backPushButton(); // from settings menu back to main
     // acts as a save button too
+    void takeScreenshot();
+    void toggleRecording();
 
 private:
 
     Ui::MainWindow *ui;
     QString m_currentResolution = "Auto";
     VideoManager *videoManager;
+    bool m_isRecording = false;
 };
 #endif // MAINWINDOW_H

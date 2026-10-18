@@ -9,6 +9,7 @@ class GstVideoWidget : public QOpenGLWidget {
     Q_OBJECT
 public:
     explicit GstVideoWidget(QWidget *parent = nullptr) : QOpenGLWidget(parent) {}
+    QImage getCurrentFrame() const { return currentFrame; }
 
 public slots:
     void updateFrame(const QImage &image) {

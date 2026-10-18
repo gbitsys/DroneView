@@ -59,56 +59,91 @@ void VideoManager::setCustomPipeline(const QString &pipelineString) {
     }
 }
 
-QString VideoManager::menuPipelineBuild(const QString &codec, const QString &decodingType, const QString &protocol, const QString &bitrate, const QString &receiverIp) {
-    // 1. Καθορισμός depayloader και encoding name βάσει codec
-    QString depayloader = "rtph264depay";
-    QString encodingName = "H264";
-    if (codec.contains("H265")) {
+// ... (other functions) ...
+
+QString VideoManager::menuPipelineBuild(CodecType codec, DecodingType decodingType, ProtocolType protocol, const QString &receiverIp) {
+    // 1. Defining depayloader and encoding name based on the codec enum
+    QString depayloader;
+    QString encodingName;
+
+    switch (codec) {
+    case CodecType::H265:
         depayloader = "rtph265depay";
         encodingName = "H265";
-    } else if (codec.contains("VP8")) {
+        break;
+    case CodecType::VP8:
         depayloader = "rtpvp8depay";
         encodingName = "VP8";
-    } else if (codec.contains("VP9")) {
+        break;
+    case CodecType::VP9:
         depayloader = "rtpvp9depay";
         encodingName = "VP9";
+        break;
+    case CodecType::H264:
+    default:
+        depayloader = "rtph264depay";
+        encodingName = "H264";
+        break;
     }
 
-    // 2. Network Source Block (Receiver)
+    // 2. Network Source Block (Receiver) using constants
     QString networkSourceBlock = "";
-    if (protocol == "RTSP") {
-        networkSourceBlock = QString("rtspsrc location=rtsp://%1:5000/live latency=50 ! %2")
-        .arg(receiverIp.isEmpty() ? "127.0.0.1" : receiverIp)
+    QString targetIp = receiverIp.isEmpty() ? DEFAULT_IP : receiverIp;
+
+    if (protocol == ProtocolType::RTSP) {
+        networkSourceBlock = QString("rtspsrc location=rtsp://%1:%2/live latency=%3 ! %4")
+        .arg(targetIp)
+            .arg(DEFAULT_PORT)
+            .arg(DEFAULT_LATENCY)
             .arg(depayloader);
     } else { // UDP / RTP
-        networkSourceBlock = QString("udpsrc port=5000 caps=\"application/x-rtp,media=video,clock-rate=90000,encoding-name=%1,payload=96\" ! "
-                                     "rtpjitterbuffer latency=50 ! %3")
+        networkSourceBlock = QString("udpsrc port=%1 caps=\"application/x-rtp,media=video,clock-rate=90000,encoding-name=%2,payload=96\" ! "
+                                     "rtpjitterbuffer latency=%3 ! %4")
+                                 .arg(DEFAULT_PORT)
                                  .arg(encodingName)
+                                 .arg(DEFAULT_LATENCY)
                                  .arg(depayloader);
     }
 
-    // 3. Decoder Block (PC / Receiver - βάσει decodingType)
-    QString decoderBlock = "";
-    bool isHardwareDecode = (decodingType == "Hardware");
+    // 3. Decoder Block (PC / Receiver - based on decodingType)
+    QString parser = "";
+    QString decoder = "";
+    bool isHardwareDecode = (decodingType == DecodingType::Hardware);
 
-    if (codec.contains("H265")) {
-        decoderBlock = isHardwareDecode ? "h265parse ! vaapidecodebin" : "h265parse ! avdec_h265";
-    } else if (codec.contains("VP8")) {
-        decoderBlock = isHardwareDecode ? "vaapidecodebin" : "vp8dec";
-    } else if (codec.contains("VP9")) {
-        decoderBlock = isHardwareDecode ? "vaapidecodebin" : "vp9dec";
-    } else { // H264
-        decoderBlock = isHardwareDecode ? "h264parse ! vaapidecodebin" : "h264parse ! avdec_h264";
+    switch (codec) {
+    case CodecType::H265:
+        parser = "h265parse";
+        decoder = isHardwareDecode ? "vaapidecodebin" : "avdec_h265";
+        break;
+    case CodecType::VP8:
+        parser = "";
+        decoder = isHardwareDecode ? "vaapidecodebin" : "vp8dec";
+        break;
+    case CodecType::VP9:
+        parser = "";
+        decoder = isHardwareDecode ? "vaapidecodebin" : "vp9dec";
+        break;
+    case CodecType::H264:
+    default:
+        parser = "h264parse";
+        decoder = isHardwareDecode ? "vaapidecodebin" : "avdec_h264";
+        break;
     }
 
-    // 4. Sink Block με το videocrop
-    QString sinkBlock = "videocrop name=cropper ! videoconvert ! video/x-raw,format=RGB ! appsink name=mysink emit-signals=true drop=true max-buffers=1 sync=false";
+    QString teeBlock = parser.isEmpty() ? "tee name=vid_tee" : QString("%1 ! tee name=vid_tee").arg(parser);
 
-    // 5. Συναρμολόγηση
-    QString finalReceiverPipeline = QString("%1 ! %2 ! %3")
+    // 4. Sink Block (remains the same)
+    QString displayBranch = QString("queue ! %1 ! videocrop name=cropper ! videoconvert ! video/x-raw,format=RGB ! appsink name=mysink emit-signals=true drop=true max-buffers=1 sync=false").arg(decoder);
+
+    // 5. Record Block (remains the same)
+    QString recordBranch = "queue ! valve name=rec_valve drop=true ! matroskamux name=rec_mux  ! filesink name=rec_sink async=false location=dummy.mkv";
+
+    // 6. Assembly (remains the same)
+    QString finalReceiverPipeline = QString("%1 ! %2 ! %3  vid_tee. ! %4")
                                         .arg(networkSourceBlock)
-                                        .arg(decoderBlock)
-                                        .arg(sinkBlock);
+                                        .arg(teeBlock)
+                                        .arg(displayBranch)
+                                        .arg(recordBranch);
 
     qDebug() << "Pipeline: " << finalReceiverPipeline;
     return finalReceiverPipeline;
@@ -219,3 +254,47 @@ GstFlowReturn VideoManager::onNewSample(GstElement *sink, VideoManager *self) {
     }
     return GST_FLOW_ERROR;
 }
+
+void VideoManager::setRecording(bool record, const QString &path) {
+    if (!pipeline) return;
+
+    GstElement *valve = gst_bin_get_by_name(GST_BIN(pipeline), "rec_valve");
+    GstElement *sink = gst_bin_get_by_name(GST_BIN(pipeline), "rec_sink");
+    GstElement *mux = gst_bin_get_by_name(GST_BIN(pipeline), "rec_mux");
+
+    if (!valve || !sink || !mux) {
+        qWarning() << "No recording elements found in pipeline!";
+        if(valve) gst_object_unref(valve);
+        if(sink) gst_object_unref(sink);
+        if(mux) gst_object_unref(mux);
+        return;
+    }
+
+    if (record) {
+        // Restore sink and muxer
+        gst_element_set_state(sink, GST_STATE_NULL);
+        gst_element_set_state(mux, GST_STATE_NULL);
+
+        // Setting new file
+        g_object_set(sink, "location", path.toUtf8().constData(), NULL);
+
+        // Starting and opening the valve
+        gst_element_set_state(mux, GST_STATE_PLAYING);
+        gst_element_set_state(sink, GST_STATE_PLAYING);
+        g_object_set(valve, "drop", FALSE, NULL);
+
+        qDebug() << "Recording started at:" << path;
+    } else {
+        // Closing valve in order for data stream to close
+        g_object_set(valve, "drop", TRUE, NULL);
+
+        // Sending EOS in muxer in order to mkv file to close succesfully
+        gst_element_send_event(mux, gst_event_new_eos());
+        qDebug() << "Recording stopped";
+    }
+
+    gst_object_unref(valve);
+    gst_object_unref(sink);
+    gst_object_unref(mux);
+}
+
