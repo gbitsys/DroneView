@@ -97,3 +97,5 @@ install(TARGETS DroneView
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(DroneView)
 endif()
+
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/wait_image.jpg DESTINATION ${CMAKE_CURRENT_BINARY_DIR}) # In order to show wait_image at wait screen

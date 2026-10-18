@@ -8,6 +8,9 @@ class NetworkManager : public QObject
     Q_OBJECT
 public:
     NetworkManager();
+
+private:
+
 };
 
 #endif // NETWORKMANAGER_H
