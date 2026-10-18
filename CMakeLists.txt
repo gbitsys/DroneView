@@ -28,10 +28,6 @@ set(PROJECT_SOURCES
         videomanager.h
         videomanager.cpp
         gstvideowidget.h
-        networkmanager.h
-        networkmanager.cpp
-
-
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
