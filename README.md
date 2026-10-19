@@ -1,10 +1,10 @@
-# DroneView 🚁📹
+# DroneView 
 
 **DroneView** is a ground station video receiver application built with C++17, Qt, and GStreamer. It provides real-time video stream ingestion, hardware/software decoding, digital zooming, dynamic pipeline configuration, and OpenGL-based video rendering.
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Language:** C++17
 * **GUI Framework:** Qt 6 / Qt 5 (Widgets, OpenGLWidgets, MultimediaWidgets)
@@ -13,7 +13,7 @@
 
 ---
 
-## ⚙️ Prerequisites & Dependencies
+##  Prerequisites & Dependencies
 
 ### Ubuntu / Debian
 Install the required development packages for Qt and GStreamer:
@@ -37,7 +37,7 @@ sudo apt install -y \
 
 ---
 
-## 🚀 Building & Running
+##  Building & Running
 
 1. Clone the repository:
 ```bash
